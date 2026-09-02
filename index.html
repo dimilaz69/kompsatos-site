@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kompsatos — training that decides, not just records</title>
+<meta name="description" content="Kompsatos reads what you actually did last session and gives you one clear target for today: the weight, the reps, and the reason. Offline-first, built by a physiotherapist.">
+<meta property="og:title" content="Kompsatos">
+<meta property="og:description" content="The hard part isn't logging your sets. It's knowing what to do next.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kompsatos.com/">
+<style>
+  :root{
+    --graphite:#101214;
+    --anthracite:#17191D;
+    --bone:#E9E7E2;
+    --porcelain:#F4F2ED;
+    --ignition:#FF5A1F;
+    --muted:#9C9893;
+    --divider:#2A2D32;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--graphite);
+    color:var(--bone);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+  /* ---------- nav ---------- */
+  nav{
+    border-bottom:1px solid var(--divider);
+    position:sticky;top:0;z-index:10;
+    background:rgba(16,18,20,.88);
+    backdrop-filter:saturate(150%) blur(12px);
+  }
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .mark{
+    font-weight:700;letter-spacing:.16em;font-size:14px;text-transform:uppercase;
+    text-decoration:none;display:flex;align-items:center;gap:10px;
+  }
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--ignition);flex:none}
+  .nav-links{display:flex;gap:28px;font-size:14px}
+  .nav-links a{color:var(--muted);text-decoration:none}
+  .nav-links a:hover{color:var(--bone)}
+  @media(max-width:640px){.nav-links{display:none}}
+
+  /* ---------- hero ---------- */
+  header{padding:96px 0 88px;border-bottom:1px solid var(--divider)}
+  .eyebrow{
+    display:inline-block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ignition);border:1px solid rgba(255,90,31,.35);
+    padding:5px 11px;border-radius:999px;margin-bottom:28px;
+  }
+  h1{
+    font-size:clamp(34px,6vw,58px);line-height:1.08;letter-spacing:-.02em;
+    margin:0 0 24px;font-weight:700;max-width:16ch;
+  }
+  .lede{font-size:clamp(18px,2.3vw,21px);color:var(--muted);max-width:56ch;margin:0 0 36px}
+  .lede strong{color:var(--bone);font-weight:600}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .btn{
+    display:inline-block;padding:13px 24px;border-radius:8px;text-decoration:none;
+    font-size:15px;font-weight:600;
+  }
+  .btn-primary{background:var(--ignition);color:#0B0C0D}
+  .btn-primary:hover{background:#ff6d38}
+  .btn-ghost{border:1px solid var(--divider);color:var(--bone)}
+  .btn-ghost:hover{border-color:var(--muted)}
+  .status{font-size:14px;color:var(--muted);margin-top:22px}
+
+  /* ---------- sections ---------- */
+  section{padding:80px 0;border-bottom:1px solid var(--divider)}
+  h2{
+    font-size:clamp(24px,3.4vw,34px);line-height:1.18;letter-spacing:-.015em;
+    margin:0 0 16px;font-weight:700;max-width:22ch;
+  }
+  .sub{color:var(--muted);max-width:60ch;margin:0 0 44px}
+  .grid{display:grid;gap:26px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .card{
+    background:var(--anthracite);border:1px solid var(--divider);
+    border-radius:12px;padding:26px;
+  }
+  .card h3{font-size:17px;margin:0 0 10px;font-weight:650;letter-spacing:-.005em}
+  .card p{margin:0;color:var(--muted);font-size:15px;line-height:1.62}
+  .num{
+    font-size:12px;letter-spacing:.12em;color:var(--ignition);
+    text-transform:uppercase;display:block;margin-bottom:12px;font-weight:600;
+  }
+
+  /* ---------- feature list ---------- */
+  ul.features{list-style:none;padding:0;margin:0;display:grid;gap:2px}
+  ul.features li{
+    display:grid;grid-template-columns:26px 1fr;gap:14px;align-items:start;
+    padding:17px 0;border-bottom:1px solid var(--divider);
+  }
+  ul.features li:last-child{border-bottom:none}
+  ul.features .tick{color:var(--ignition);font-weight:700;line-height:1.5}
+  ul.features b{display:block;font-weight:620;margin-bottom:2px}
+  ul.features span.d{color:var(--muted);font-size:15px}
+
+  /* ---------- founder ---------- */
+  .founder{display:grid;grid-template-columns:1fr;gap:32px;align-items:start}
+  @media(min-width:820px){.founder{grid-template-columns:1.35fr 1fr;gap:56px}}
+  .founder p{color:var(--muted);max-width:60ch}
+  .founder p strong{color:var(--bone);font-weight:600}
+  .aside{
+    background:var(--anthracite);border:1px solid var(--divider);
+    border-radius:12px;padding:26px;font-size:15px;
+  }
+  .aside dt{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ignition);font-weight:600}
+  .aside dd{margin:6px 0 20px;color:var(--muted)}
+  .aside dd:last-of-type{margin-bottom:0}
+
+  /* ---------- privacy strip ---------- */
+  .privacy-note{
+    background:var(--anthracite);border:1px solid var(--divider);
+    border-left:3px solid var(--ignition);
+    border-radius:12px;padding:28px;
+  }
+  .privacy-note p{margin:0 0 14px;color:var(--muted);max-width:62ch}
+  .privacy-note p:last-child{margin-bottom:0}
+
+  /* ---------- footer ---------- */
+  footer{padding:52px 0 72px;font-size:14px;color:var(--muted)}
+  .foot-in{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+  footer a{color:var(--muted);text-decoration:none}
+  footer a:hover{color:var(--bone)}
+  .foot-links{display:flex;gap:22px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="mark" href="/"><span class="dot"></span>Kompsatos</a>
+    <div class="nav-links">
+      <a href="#approach">Approach</a>
+      <a href="#app">The app</a>
+      <a href="#who">Who builds it</a>
+      <a href="/privacy.html">Privacy</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <span class="eyebrow">Private beta</span>
+    <h1>The hard part isn't logging your sets.</h1>
+    <p class="lede">It's knowing what to do next. Kompsatos reads what you
+      <strong>actually did</strong> last session and gives you one target for today —
+      the weight, the reps, and the reason it changed. On your phone, without an account,
+      without the internet.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="mailto:beta@kompsatos.com?subject=Kompsatos%20beta">Ask for a beta invite</a>
+      <a class="btn btn-ghost" href="#approach">How it decides</a>
+    </div>
+    <p class="status">Currently in closed testing. Not yet on the App Store.</p>
+  </div>
+</header>
+
+<section id="approach">
+  <div class="wrap">
+    <h2>Most training apps are spreadsheets with rounded corners.</h2>
+    <p class="sub">They are very good at storing what you lifted. They are silent about the
+      only question that matters when you are standing in front of the rack.</p>
+    <div class="grid">
+      <div class="card">
+        <span class="num">01</span>
+        <h3>They record. They don't decide.</h3>
+        <p>Logging is the easy half. Turning eight weeks of sets into "put 42.5 on the bar
+          and stop at seven" is the half that changes results — and it is the half almost
+          every app leaves to you.</p>
+      </div>
+      <div class="card">
+        <span class="num">02</span>
+        <h3>They ignore what just happened.</h3>
+        <p>A program written in January doesn't know that last Tuesday you left three reps
+          in reserve and the bar moved fast. Kompsatos derives today's target from your
+          last real performance on that exact exercise.</p>
+      </div>
+      <div class="card">
+        <span class="num">03</span>
+        <h3>They want your health data.</h3>
+        <p>Injuries, sleep, medical notes — uploaded by default, to someone's server, for
+          reasons that serve the company. In Kompsatos that category of data does not
+          leave your phone at all.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="app">
+  <div class="wrap">
+    <h2>What it actually does</h2>
+    <p class="sub">No promises about features that don't exist yet. This is what runs today.</p>
+    <ul class="features">
+      <li><span class="tick">→</span><span>
+        <b>One target per exercise, with the reason shown</b>
+        <span class="d">Weight, rep range, and the change from last time — plus why it moved.
+        You are never asked to trust a number you cannot interrogate.</span></span></li>
+      <li><span class="tick">→</span><span>
+        <b>Your last session, on screen, while you lift</b>
+        <span class="d">The sets you actually completed for this exercise sit directly above
+        today's input, so the comparison is immediate rather than remembered.</span></span></li>
+      <li><span class="tick">→</span><span>
+        <b>Progression that respects proximity to failure</b>
+        <span class="d">Reps in reserve are recorded per set and feed the next
+        recommendation, instead of being decoration in a notes field.</span></span></li>
+      <li><span class="tick">→</span><span>
+        <b>Set-by-set logging built for a gym, not a desk</b>
+        <span class="d">Steppers on weight, reps and RIR. A rest timer that starts itself.
+        Nothing that requires two clean hands and full attention.</span></span></li>
+      <li><span class="tick">→</span><span>
+        <b>Programs, cardio, body measurements, streaks</b>
+        <span class="d">The whole training record in one place, so the coaching layer has
+        something real to reason about.</span></span></li>
+      <li><span class="tick">→</span><span>
+        <b>Works with no account and no signal</b>
+        <span class="d">Open it in a basement gym on airplane mode and everything works.
+        Sync exists, is optional, and only ever runs when you tap it.</span></span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="who">
+  <div class="wrap">
+    <h2>Who builds it</h2>
+    <div class="founder">
+      <div>
+        <p>I'm <strong>Dimitrios Lazaridis</strong>, a physiotherapist in Heraklion, Crete.
+          I work in neurological rehabilitation, and I supervise clinical interns and teach
+          student practitioners.</p>
+        <p>Most of my working life is spent on one specific gap: the distance between what
+          the evidence actually supports and what people end up doing in a gym or a clinic.
+          That gap is where injuries and wasted years live. It is also, more or less
+          exactly, what this app is trying to close.</p>
+        <p>Kompsatos is not a startup pitch. It's the tool I wanted to exist, built to a
+          standard I'd be willing to hand to a patient — which is a much higher bar than
+          the one most fitness software is built to. <strong>I train with it myself</strong>,
+          and every decision it makes is one I have to live with under a loaded bar.</p>
+        <p>The name is a river in Xanthi, where I'm from.</p>
+      </div>
+      <dl class="aside">
+        <dt>Background</dt>
+        <dd>Physiotherapist · neurological rehabilitation</dd>
+        <dt>Teaching</dt>
+        <dd>Supervises clinical interns and student practitioners</dd>
+        <dt>Based</dt>
+        <dd>Heraklion, Crete, Greece</dd>
+        <dt>Status</dt>
+        <dd>Building Kompsatos independently. No investors, no ads, no data sale.</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="privacy">
+  <div class="wrap">
+    <h2>Where your data lives</h2>
+    <p class="sub">Short version, in plain language. The full policy is one click away.</p>
+    <div class="privacy-note">
+      <p><strong style="color:var(--bone)">Use it without an account and nothing leaves your
+        phone.</strong> No sign-in, no anonymous identity created in the background, no
+        network calls. Your training history is a database file on your device.</p>
+      <p><strong style="color:var(--bone)">Health, injury, sleep and recovery notes stay on
+        the device in every case</strong> — even if you do create an account and sync. That
+        path is closed in this build, deliberately, and reopening it would require changing
+        the published privacy declaration first.</p>
+      <p><strong style="color:var(--bone)">No crash reporting. No advertising. No
+        analytics SDK.</strong> Errors stay on the device.</p>
+      <p style="margin-top:22px"><a href="/privacy.html" style="color:var(--ignition);font-weight:600">Read the full privacy policy →</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="beta" style="border-bottom:none">
+  <div class="wrap">
+    <h2>Testing starts now</h2>
+    <p class="sub">The app is in closed testing while I train with it and fix what turns out
+      to be confusing under real fatigue. If you lift seriously and you'd rather use
+      something built by someone who has to answer for it, write to me.</p>
+    <a class="btn btn-primary" href="mailto:beta@kompsatos.com?subject=Kompsatos%20beta">beta@kompsatos.com</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <span>© 2026 Kompsatos</span>
+    <div class="foot-links">
+      <a href="/privacy.html">Privacy</a>
+      <a href="mailto:support@kompsatos.com">Support</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
