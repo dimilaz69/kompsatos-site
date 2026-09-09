@@ -72,7 +72,7 @@
 <div class="wrap">
 <header>
   <h1>Privacy Policy</h1>
-  <p class="meta">Last updated: 30 August 2026 · Applies to the Kompsatos iOS app and this website</p>
+  <p class="meta">Last updated: 9 September 2026 · Applies to the Kompsatos iOS app and this website</p>
 </header>
 
 <main>
@@ -81,8 +81,10 @@
   <p><strong>The short version.</strong> Kompsatos is offline-first. If you use it without
   creating an account, nothing you enter ever leaves your phone. If you do create an account,
   training data is uploaded only when you tap sync — never in the background. Health, injury,
-  sleep and recovery notes stay on your device in all cases. There is no advertising, no
-  analytics SDK, and no crash reporting.</p>
+  sleep and recovery notes stay on your device in all cases. There is no advertising and no analytics SDK. While you are signed in, the
+  app sends a technical report when it crashes so the fault can be fixed — you
+  can switch that off in Settings — and it sends nothing at all when you use
+  the app without an account.</p>
 </div>
 
 <h2>1. Who is responsible for your data</h2>
@@ -108,8 +110,13 @@ on your phone. This includes:</p>
 Uninstalling the app deletes this local data permanently.</p>
 
 <h2>3. What can leave your device, and when</h2>
-<p>Nothing is transmitted unless you both (a) create an account and sign in, and (b) actively
-tap sync. Sync does not run in the background, on a schedule, or on app launch.</p>
+<p>Nothing you enter is transmitted unless you both (a) create an account and sign in, and
+(b) actively tap sync. Sync does not run in the background, on a schedule, or on app
+launch.</p>
+<p>There is one exception, and it is not a copy of your records. If the app fails while you
+are signed in, a technical crash report is sent without a sync tap, because a fault that
+stops the app cannot wait for one. What that report contains is listed in section 6, and
+it can be switched off in Settings. Signed out, not even that is sent.</p>
 
 <table>
   <tr><th>Category</th><th>Uploaded on manual sync?</th></tr>
@@ -118,6 +125,7 @@ tap sync. Sync does not run in the background, on a schedule, or on app launch.<
   <tr><td>Training programs and coach summaries</td><td>Yes</td></tr>
   <tr><td>Account email, display name and user ID</td><td>Yes — required to hold an account</td></tr>
   <tr><td>Health, injury, sleep, nutrition and recovery notes</td><td><strong>No — never</strong></td></tr>
+  <tr><td>Crash reports — technical, not a copy of your records</td><td>Not on sync — sent when the app fails, and only while signed in</td></tr>
 </table>
 
 <p>Uploaded data is stored under a record keyed to your own user ID and is readable only by
@@ -134,7 +142,7 @@ as fitness data and are uploaded only on manual sync as described.</p>
 
 <h2>5. What Kompsatos does not do</h2>
 <ul>
-  <li><strong>No crash reporting.</strong> Errors are handled on the device and are not sent anywhere.</li>
+  <li><strong>No crash reporting when you use the app without an account.</strong> Errors are handled on the device and nothing is sent.</li>
   <li><strong>No advertising and no advertising identifiers.</strong></li>
   <li><strong>No analytics or tracking SDK.</strong> Your activity is not measured, profiled or shared.</li>
   <li><strong>No sale or sharing of personal data</strong> with third parties for their own purposes.</li>
@@ -142,12 +150,15 @@ as fitness data and are uploaded only on manual sync as described.</p>
 </ul>
 
 <h2>6. Who processes data on our behalf</h2>
-<p>When you use an account and sync, two services operated by <strong>Google</strong> are used
-as processors:</p>
+<p>When you use an account, three services operated by <strong>Google</strong> are used as
+processors:</p>
 <ul>
   <li><strong>Firebase Authentication</strong> — to hold your sign-in credentials and identify your account</li>
   <li><strong>Cloud Firestore</strong> — to store the synced training records listed above</li>
+  <li><strong>Firebase Crashlytics</strong> — to receive a technical report when the app fails, so the fault can be found and fixed</li>
 </ul>
+
+<p><strong>What a crash report contains.</strong> The stack trace of the failure, the app version, and technical facts about the device — its model, operating system version, memory and free disk space — together with random identifiers Google generates to group identical crashes and count how many people a fault affects. It carries no account identifier and no email address, and it is not a copy of anything you have stored: no training records, no measurements, and none of your health, injury, sleep or recovery notes. Where a failure happens while the app is handling something you typed, the technical description of that failure can include the value that caused it. Crash reporting is active only while you are signed in, and can be switched off under Settings, Send crash reports.</p>
 
 <p><strong>International transfers.</strong> Google is a processor acting on documented
 instructions under the Google Cloud Data Processing Addendum. Depending on the region the
@@ -164,7 +175,8 @@ reaches Google at all.</p>
   <li><strong>Consent</strong> (Art. 6(1)(a)) — for anything optional you opt into. You can
       withdraw consent at any time.</li>
   <li><strong>Legitimate interests</strong> (Art. 6(1)(f)) — keeping the service secure and
-      preventing abuse.</li>
+      preventing abuse, and diagnosing faults from crash reports so the app can be
+      fixed.</li>
 </ul>
 <p>Using the app without an account involves no processing by us at all, because no data
 reaches us.</p>
@@ -173,6 +185,7 @@ reaches us.</p>
 <p>Local data stays on your device until you delete it or uninstall the app. Synced data is
 kept in your account for as long as the account exists. When an account is deleted, the
 records stored under it are deleted with it.</p>
+<p>Crash reports are kept by Google for 90 days, after which they are removed from live and backup systems.</p>
 
 <h2>9. Your rights</h2>
 <p>Under the GDPR you have the right to access your data, correct it, have it erased, restrict
