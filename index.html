@@ -5,29 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kompsatos — train by the evidence</title>
   <meta name="description" content="Kompsatos is a training app built by a physiotherapist who lifts. Progression, records, recovery and nutrition guidance grounded in published research. Join the iPhone beta.">
+  <link rel="canonical" href="https://www.kompsatos.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kompsatos">
+  <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Kompsatos — train by the evidence">
-  <meta property="og:description" content="A training app built by a physiotherapist who lifts. Join the iPhone beta.">
-  <meta property="og:image" content="https://www.kompsatos.com/img/career.jpg">
+  <meta property="og:description" content="A training app built by a physiotherapist who lifts. Every rule inside comes with its source. Join the iPhone beta.">
   <meta property="og:url" content="https://www.kompsatos.com/">
+  <meta property="og:image" content="https://www.kompsatos.com/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Kompsatos: train by the evidence. Evidence-based training app for iPhone, built by a physiotherapist.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kompsatos — train by the evidence">
+  <meta name="twitter:description" content="A training app built by a physiotherapist who lifts. Every rule inside comes with its source. Join the iPhone beta.">
+  <meta name="twitter:image" content="https://www.kompsatos.com/img/og.png">
   <meta name="theme-color" content="#0c0d10">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.kompsatos.com/#org",
+        "name": "Kompsatos",
+        "url": "https://www.kompsatos.com/",
+        "logo": "https://www.kompsatos.com/apple-touch-icon.png",
+        "email": "hello@kompsatos.com",
+        "founder": { "@type": "Person", "name": "Dimitris Lazaridis", "jobTitle": "Physiotherapist" },
+        "sameAs": [
+          "https://www.instagram.com/kompsatosapp",
+          "https://www.tiktok.com/@kompsatos",
+          "https://www.youtube.com/@kompsatosapp"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Kompsatos",
+        "url": "https://www.kompsatos.com/",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "iOS",
+        "description": "A training app built by a physiotherapist who lifts. Progression rules, records, recovery and nutrition guidance grounded in published research.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+        "author": { "@id": "https://www.kompsatos.com/#org" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Is Kompsatos free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The coach is free, always: logging, plans, load suggestions, records and guidance. A paid Pro tier is planned for extras such as full chart history and export." } },
+          { "@type": "Question", "name": "When do I get access to the beta?", "acceptedAnswer": { "@type": "Answer", "text": "Testers are invited in small waves through Apple's TestFlight. When it is your turn you get an email from TestFlight with a link to install the app." } },
+          { "@type": "Question", "name": "Is there an Android version?", "acceptedAnswer": { "@type": "Answer", "text": "Not yet. Kompsatos is iPhone only for now. Android users can join the same waitlist and will be the first to hear if an Android version happens." } },
+          { "@type": "Question", "name": "Do I need an account, and where does my data go?", "acceptedAnswer": { "@type": "Answer", "text": "No account is needed. As a guest everything stays on your phone. With an account, and only with your explicit consent, your training is backed up to a database in Frankfurt, Germany, so you can restore it on another phone. No ads, no analytics, and your data is never sold." } },
+          { "@type": "Question", "name": "Is this medical advice?", "acceptedAnswer": { "@type": "Answer", "text": "No. Kompsatos gives training information based on published research. If you have pain, an injury or a medical condition, talk to a qualified health professional." } }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+
+<a class="skip" href="#main">Skip to content</a>
 
 <header class="site">
   <div class="wrap">
     <a class="wordmark" href="/">KOMPSATOS</a>
-    <nav>
+    <nav aria-label="Sections">
       <a href="#features">Features</a>
       <a href="#evidence">Evidence</a>
       <a href="#roadmap">Roadmap</a>
       <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
       <a class="cta-small" href="#beta">Join the beta</a>
     </nav>
   </div>
 </header>
 
-<main>
+<main id="main">
   <div class="wrap">
     <div class="hero">
       <div>
@@ -38,9 +96,9 @@
           <a class="btn" href="https://tally.so/r/2EMQMA">Join the beta</a>
           <a class="btn ghost" href="#features">See what it does</a>
         </div>
-        <p class="fine">iPhone only for now. Android users can join the waitlist through the same form.</p>
+        <p class="fine">Free. Testers are invited in waves through Apple's TestFlight. iPhone only for now; Android users can join the same waitlist.</p>
       </div>
-      <div class="phone"><img src="img/career.jpg" alt="Kompsatos Athlete Career screen: level 15, total XP, achievements and current title" width="640" height="1282"></div>
+      <div class="phone"><img src="img/career.jpg" alt="Kompsatos Athlete Career screen: level 15, total XP, achievements and current title" width="640" height="1282" fetchpriority="high" decoding="async"></div>
     </div>
   </div>
 
@@ -72,9 +130,9 @@
       </div>
 
       <div class="shots">
-        <figure><div class="phone"><img src="img/achievements.jpg" alt="Achievements screen with bronze, silver, gold and platinum medals" width="640" height="1282" loading="lazy"></div><figcaption>Medals in four metals</figcaption></figure>
-        <figure><div class="phone"><img src="img/titles.jpg" alt="Title picker with earned and locked achievement titles" width="640" height="1282" loading="lazy"></div><figcaption>Titles you earn</figcaption></figure>
-        <figure><div class="phone"><img src="img/accents.jpg" alt="Accent colour picker with colours that unlock by level" width="640" height="1282" loading="lazy"></div><figcaption>Colours that unlock as you level up</figcaption></figure>
+        <figure><div class="phone"><img src="img/achievements.jpg" alt="Achievements screen with bronze, silver, gold and platinum medals" width="640" height="1282" loading="lazy" decoding="async"></div><figcaption>Medals in four metals</figcaption></figure>
+        <figure><div class="phone"><img src="img/titles.jpg" alt="Title picker with earned and locked achievement titles" width="640" height="1282" loading="lazy" decoding="async"></div><figcaption>Titles you earn</figcaption></figure>
+        <figure><div class="phone"><img src="img/accents.jpg" alt="Accent colour picker with colours that unlock by level" width="640" height="1282" loading="lazy" decoding="async"></div><figcaption>Colours that unlock as you level up</figcaption></figure>
       </div>
     </div>
   </section>
@@ -114,11 +172,12 @@
       <div>
         <div class="eyebrow">Built in public</div>
         <h2>Hi, I'm Dimitris.</h2>
-        <p class="lead">I'm a physiotherapist in Crete and I train. I built Kompsatos to fix the mistakes I and the athletes around me made for years. I share every step of the build, the research behind each decision, and my own training with the app.</p>
+        <p class="byline">Dimitris Lazaridis · Physiotherapist · Heraklion, Crete</p>
+        <p class="lead">I'm a physiotherapist and I train. I built Kompsatos to fix the mistakes I and the athletes around me made for years. I share every step of the build, the research behind each decision, and my own training with the app.</p>
         <div class="socials">
-          <a href="https://www.instagram.com/kompsatos">Instagram</a>
-          <a href="https://www.tiktok.com/@kompsatos">TikTok</a>
-          <a href="https://www.youtube.com/@kompsatos">YouTube</a>
+          <a href="https://www.instagram.com/kompsatosapp" target="_blank" rel="noopener">Instagram <span>@kompsatosapp</span></a>
+          <a href="https://www.tiktok.com/@kompsatos" target="_blank" rel="noopener">TikTok <span>@kompsatos</span></a>
+          <a href="https://www.youtube.com/@kompsatosapp" target="_blank" rel="noopener">YouTube <span>@kompsatosapp</span></a>
         </div>
       </div>
     </div>
@@ -184,6 +243,35 @@
     </div>
   </section>
 
+  <section id="faq">
+    <div class="wrap">
+      <div class="eyebrow">FAQ</div>
+      <h2>Questions people ask.</h2>
+      <div class="faq">
+        <details>
+          <summary>Is Kompsatos free?</summary>
+          <p>Yes. The coach is free, always: logging, plans, load suggestions, records and guidance. A paid Pro tier is planned for extras such as full chart history and export.</p>
+        </details>
+        <details>
+          <summary>When do I get access to the beta?</summary>
+          <p>Testers are invited in small waves through Apple's TestFlight. When it is your turn you get an email from TestFlight with a link to install the app.</p>
+        </details>
+        <details>
+          <summary>Is there an Android version?</summary>
+          <p>Not yet. Kompsatos is iPhone only for now. Android users can join the same waitlist and will be the first to hear if an Android version happens.</p>
+        </details>
+        <details>
+          <summary>Do I need an account, and where does my data go?</summary>
+          <p>No account is needed. As a guest everything stays on your phone. With an account, and only with your explicit consent, your training is backed up to a database in Frankfurt, Germany, so you can restore it on another phone. No ads, no analytics, and your data is never sold. Details in the <a href="privacy.html">privacy policy</a>.</p>
+        </details>
+        <details>
+          <summary>Is this medical advice?</summary>
+          <p>No. Kompsatos gives training information based on published research. If you have pain, an injury or a medical condition, talk to a qualified health professional.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <section id="beta" class="signup">
     <div class="wrap">
       <div class="eyebrow">Beta</div>
@@ -198,6 +286,7 @@
 <footer class="site">
   <div class="wrap">
     <div><a href="privacy.html">Privacy</a><a href="terms.html">Beta terms</a><a href="support.html">Support</a><a href="mailto:hello@kompsatos.com">hello@kompsatos.com</a></div>
+    <div><a href="https://www.instagram.com/kompsatosapp" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@kompsatos" target="_blank" rel="noopener">TikTok</a><a href="https://www.youtube.com/@kompsatosapp" target="_blank" rel="noopener">YouTube</a></div>
     <div>© 2026 Kompsatos · Training information, not medical advice.</div>
   </div>
 </footer>
