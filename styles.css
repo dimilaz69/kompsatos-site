@@ -1,12 +1,15 @@
 :root {
-  --bg: #0c0d10;
-  --surface: #15171b;
-  --surface-2: #1c1f24;
-  --line: #2a2d33;
-  --text: #f3f1ec;
-  --muted: #a3a6ad;
+  /* Same tokens as the app (lib/core/design_system/app_colors.dart): graphite, anthracite, porcelain, bone, Ignition. */
+  --bg: #101214;
+  --surface: #17191d;
+  --surface-2: #1d2024;
+  --line: #2a2d32;
+  --text: #f4f2ed;
+  --muted: #9c9893;
   --accent: #ff5a1f;
   --accent-soft: rgba(255, 90, 31, 0.12);
+  --on-accent: #f4f2ed;
+  --bone: #e9e7e2;
   --radius: 18px;
   --max: 1080px;
   color-scheme: dark;
@@ -30,14 +33,14 @@ a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
 
-.skip { position: absolute; left: 16px; top: -60px; background: var(--accent); color: #fff; padding: 10px 14px; border-radius: 10px; z-index: 20; font-weight: 700; }
+.skip { position: absolute; left: 16px; top: -60px; background: var(--accent); color: var(--on-accent); padding: 10px 14px; border-radius: 10px; z-index: 20; font-weight: 700; }
 .skip:focus { top: 12px; text-decoration: none; }
 
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
 
 header.site {
   position: sticky; top: 0; z-index: 10;
-  background: rgba(12, 13, 16, 0.85);
+  background: rgba(16, 18, 20, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
@@ -59,7 +62,7 @@ h3 { font-size: 20px; margin: 0 0 8px; }
 .byline { color: var(--text); font-weight: 600; font-size: 15px; margin: -4px 0 14px; letter-spacing: 0.01em; }
 
 .btn {
-  display: inline-block; background: var(--accent); color: #fff; font-weight: 700;
+  display: inline-block; background: var(--accent); color: var(--on-accent); font-weight: 700;
   padding: 15px 26px; border-radius: 14px; font-size: 17px;
 }
 .btn:hover { text-decoration: none; filter: brightness(1.08); }
@@ -125,7 +128,7 @@ footer.site a { color: var(--muted); margin-right: 18px; }
 .doc { max-width: 760px; padding: 56px 20px 80px; margin: 0 auto; }
 .doc h1 { font-size: clamp(32px, 5vw, 44px); }
 .doc h2 { font-size: 24px; margin-top: 40px; }
-.doc p, .doc li { color: #d7d5d0; }
+.doc p, .doc li { color: var(--bone); }
 .doc table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 15px; }
 .doc th, .doc td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
 .doc th { background: var(--surface); }
