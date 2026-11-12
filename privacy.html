@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy policy — Kompsatos</title>
   <link rel="canonical" href="https://www.kompsatos.com/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://www.kompsatos.com/privacy.html">
+  <link rel="alternate" hreflang="el" href="https://www.kompsatos.com/el/privacy.html">
   <meta name="description" content="What personal data Kompsatos collects, why, where it is stored and how to export or delete it. No ads, no analytics, no tracking.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Kompsatos">
@@ -17,19 +19,19 @@
   <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 <header class="site">
   <div class="wrap">
     <a class="wordmark" href="/">KOMPSATOS</a>
-    <nav><a class="cta-small" href="/#beta">Join the beta</a></nav>
+    <nav><a class="lang" href="/el/privacy.html" hreflang="el" lang="el">Ελληνικά</a><a class="cta-small" href="/#beta">Join the beta</a></nav>
   </div>
 </header>
 
 <main class="doc">
   <h1>Privacy policy</h1>
-  <p class="updated">Last updated: 29 October 2026</p>
+  <p class="updated">Last updated: 11 November 2026</p>
 
   <p>This policy explains what personal data Kompsatos collects, why, where it goes, and what you can do about it. It covers this website, the beta sign-up form and the Kompsatos iPhone app.</p>
 
@@ -67,12 +69,21 @@
   <p>Training, heart-rate and body-measurement data can be health data under GDPR Art. 9. We process it only to give you the app's features, on the basis of your explicit consent (Art. 9(2)(a) and Art. 6(1)(a)). We never use it for advertising, never sell it, and never give it to anyone else for their own purposes, unless the law requires it. Google stores it for us as our processor, as described below; in the app, only your account can read it.</p>
 
   <h3>Apple Health</h3>
-  <p>Apple Health is off unless you turn it on in Settings, and iOS asks for your permission first. The app only reads from Apple Health; it never writes to it. It reads two things:</p>
+  <p>Apple Health is off unless you turn it on in Settings, and iOS asks for your permission first. It reads two things:</p>
   <ul>
     <li>your body weight, to add new weigh-ins to your log;</li>
     <li>your sleep, only when you tap “Fill from Apple Health” in the sleep log.</li>
   </ul>
+  <p>It writes one thing, and only if you also turn on “Save workouts”: each finished workout, as strength training with its start and end time. It writes nothing else. Workouts already saved stay in Apple Health until you delete them there.</p>
   <p>Weigh-ins read from Apple Health are stored like the ones you type: on your phone, and in your account only if you have an account and cloud backup is on. Sleep read from Apple Health stays on your phone and is never synced. Turning Apple Health off in the app stops further reading; what was already read stays in your log until you delete it. Data from Apple Health is never used for advertising or marketing, never sold, and never given to anyone else for their own purposes, unless the law requires it.</p>
+
+  <h3>Android</h3>
+  <p>On Android there is no Apple Health connection: the app reads and writes no health data from other apps. It asks for two things, and works without either:</p>
+  <ul>
+    <li>to show notifications: the reminders you turn on, the end of rest, and the running rest timer;</li>
+    <li>to use exact alarms, so the end-of-rest alert arrives on time.</li>
+  </ul>
+  <p>Android's own backup of app data is turned off for Kompsatos: Android does not copy your log to Google Drive or to a new phone. The only copy outside your phone is the cloud backup described above, if you turn it on.</p>
 
   <h3>Where it is stored</h3>
   <table>
@@ -81,18 +92,27 @@
   </table>
 
   <h3>Crash reports</h3>
-  <p>If you are signed in and you turn on “Send crash reports”, the app sends a technical report when it fails, through Firebase Crashlytics (Google). A report contains the error, the code path where it happened, your device model and iOS version, and installation identifiers. It never contains your training, health or injury data. Crash reports are off unless you turn them on, and you can turn them off at any time in Settings. Google keeps them for 90 days and may process them outside the EU under the safeguards above.</p>
+  <p>If you are signed in and you turn on “Send crash reports”, the app sends a technical report when it fails, through Firebase Crashlytics (Google). A report contains the error, the code path where it happened, your device model and operating system version (iOS or Android), and installation identifiers. It never contains your training, health or injury data. Crash reports are off unless you turn them on, and you can turn them off at any time in Settings. Google keeps them for 90 days and may process them outside the EU under the safeguards above.</p>
 
   <p>The app has no advertising and no third-party analytics.</p>
 
-  <h2>Your rights and controls</h2>
+  <h2 id="your-data">Your rights and controls</h2>
   <ul>
     <li><strong>Export:</strong> Settings → Data &amp; Backup → Export training data, as a CSV, JSON or PDF file.</li>
-    <li><strong>Delete:</strong> Settings → Account → Delete account. This permanently deletes your account and all data synced to it from our servers. Google removes remaining copies from its backups within 180 days. Data on your phone stays until you delete the app.</li>
+    <li><strong>Delete:</strong> Settings → Account → Delete account. This permanently deletes your account and all data synced to it from our servers. Google removes remaining copies from its backups within 180 days. Data on your phone stays until you delete the app. Without the app, see <a href="#delete-account">Delete your account without the app</a>.</li>
     <li><strong>Withdraw consent:</strong> turn off Cloud backup in Settings → Data &amp; Backup. The app stops syncing and deletes the copy in your account from our servers. Data on your phone stays. Withdrawing consent does not affect processing that happened before.</li>
     <li>You can also ask us for a copy of your data, its correction, its deletion or its transfer by emailing <a href="mailto:hello@kompsatos.com">hello@kompsatos.com</a>; we answer within one month.</li>
     <li>You can complain to the Hellenic Data Protection Authority (<a href="https://www.dpa.gr">dpa.gr</a>).</li>
   </ul>
+
+  <h2 id="delete-account">Delete your account without the app</h2>
+  <p>If you no longer have the app, you can still have your account deleted:</p>
+  <ol>
+    <li>Email <a href="mailto:hello@kompsatos.com?subject=Delete%20my%20Kompsatos%20account">hello@kompsatos.com</a> from the email address of your Kompsatos account, with the subject “Delete my Kompsatos account”.</li>
+    <li>We reply to that address to confirm the request, so no one else can delete your account.</li>
+    <li>Within 30 days of your confirmation we delete your account and everything synced to it: workouts, body measurements, programs, machine names, coaching summaries and the consent record. We keep nothing. Google removes remaining copies from its backups within 180 days.</li>
+  </ol>
+  <p>Data on a phone where the app is still installed stays there until you delete the app.</p>
 
   <h2>Age</h2>
   <p>Kompsatos is intended for adults (18 and over).</p>
