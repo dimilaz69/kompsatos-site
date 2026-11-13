@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.kompsatos.com/</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.kompsatos.com/support.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.kompsatos.com/privacy.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://www.kompsatos.com/terms.html</loc><lastmod>2026-10-08</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://www.kompsatos.com/</loc><lastmod>2026-11-13</lastmod><changefreq>weekly</changefreq><priority>1.0</priority><xhtml:link rel="alternate" hreflang="en" href="https://www.kompsatos.com/"/><xhtml:link rel="alternate" hreflang="el" href="https://www.kompsatos.com/el/"/></url>
+  <url><loc>https://www.kompsatos.com/el/</loc><lastmod>2026-11-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority><xhtml:link rel="alternate" hreflang="en" href="https://www.kompsatos.com/"/><xhtml:link rel="alternate" hreflang="el" href="https://www.kompsatos.com/el/"/></url>
+  <url><loc>https://www.kompsatos.com/support.html</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority><xhtml:link rel="alternate" hreflang="en" href="https://www.kompsatos.com/support.html"/><xhtml:link rel="alternate" hreflang="el" href="https://www.kompsatos.com/el/support.html"/></url>
+  <url><loc>https://www.kompsatos.com/el/support.html</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority><xhtml:link rel="alternate" hreflang="en" href="https://www.kompsatos.com/support.html"/><xhtml:link rel="alternate" hreflang="el" href="https://www.kompsatos.com/el/support.html"/></url>
+  <url><loc>https://www.kompsatos.com/privacy.html</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.3</priority><xhtml:link rel="alternate" hreflang="en" href="https://www.kompsatos.com/privacy.html"/><xhtml:link rel="alternate" hreflang="el" href="https://www.kompsatos.com/el/privacy.html"/></url>
+  <url><loc>https://www.kompsatos.com/el/privacy.html</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.3</priority><xhtml:link rel="alternate" hreflang="en" href="https://www.kompsatos.com/privacy.html"/><xhtml:link rel="alternate" hreflang="el" href="https://www.kompsatos.com/el/privacy.html"/></url>
+  <url><loc>https://www.kompsatos.com/terms.html</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.3</priority><xhtml:link rel="alternate" hreflang="en" href="https://www.kompsatos.com/terms.html"/><xhtml:link rel="alternate" hreflang="el" href="https://www.kompsatos.com/el/terms.html"/></url>
+  <url><loc>https://www.kompsatos.com/el/terms.html</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.3</priority><xhtml:link rel="alternate" hreflang="en" href="https://www.kompsatos.com/terms.html"/><xhtml:link rel="alternate" hreflang="el" href="https://www.kompsatos.com/el/terms.html"/></url>
 </urlset>

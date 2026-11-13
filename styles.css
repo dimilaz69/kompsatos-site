@@ -50,6 +50,7 @@ header.site .wrap { display: flex; align-items: center; justify-content: space-b
 .wordmark:hover { text-decoration: none; }
 nav a { color: var(--muted); margin-left: 20px; font-size: 15px; }
 nav a.cta-small { color: var(--accent); font-weight: 700; }
+nav a.lang { color: var(--text); font-weight: 600; }
 
 section, #beta { scroll-margin-top: 70px; }
 
@@ -112,10 +113,19 @@ section { padding: 64px 0; border-top: 1px solid var(--line); }
 
 .signup { text-align: center; }
 .signup .lead { margin: 0 auto; }
+.steps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin: 28px auto 0; max-width: 820px; text-align: left; }
+.steps .card { display: flex; flex-direction: column; }
+.steps .card ol { color: var(--muted); margin: 0 0 18px; padding-left: 20px; }
+.steps .card ol li { margin: 6px 0; }
+.steps .card p { margin-bottom: 18px; }
+.steps .card .btn { margin-top: auto; align-self: flex-start; }
+.steps .card .tag { align-self: flex-start; }
+#android { scroll-margin-top: 80px; }
 
 footer.site { border-top: 1px solid var(--line); padding: 36px 0 48px; color: var(--muted); font-size: 14px; }
 footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; }
 footer.site a { color: var(--muted); margin-right: 18px; }
+footer.site .wrap > div { display: flex; flex-wrap: wrap; row-gap: 6px; }
 
 .plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 28px; }
 .plan ul { margin: 14px 0 0; padding-left: 18px; color: var(--muted); }
@@ -138,8 +148,9 @@ footer.site a { color: var(--muted); margin-right: 18px; }
   .hero, .founder { grid-template-columns: 1fr; }
   .hero { padding-top: 44px; }
   .hero .phone { margin: 8px auto 0; max-width: 300px; }
-  .grid, .plans { grid-template-columns: 1fr; }
+  .grid, .plans, .steps { grid-template-columns: 1fr; }
   .shots { grid-template-columns: 1fr; max-width: 320px; margin-left: auto; margin-right: auto; }
-  nav a:not(.cta-small) { display: none; }
+  nav a:not(.cta-small):not(.lang) { display: none; }
+  nav a.lang { margin-left: 0; }
   footer.site .wrap { flex-direction: column; }
 }
