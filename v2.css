@@ -57,7 +57,10 @@ header.site .wrap { display: flex; align-items: center; justify-content: space-b
 .brand svg { width: 30px; height: 30px; flex: none; }
 nav { display: flex; align-items: center; gap: 20px; }
 nav a { color: var(--muted); font-size: 15px; }
-nav .lang { background: none; border: 1px solid var(--line); border-radius: 999px; padding: 5px 12px; font-size: 14px; font-weight: 600; cursor: pointer; }
+nav .lang { background: none; border: 1px solid var(--line); border-radius: 999px; padding: 3px 4px 3px 9px; font-size: 13px; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 3px; letter-spacing: .04em; }
+nav .lang svg { width: 17px; height: 17px; color: var(--muted); margin-right: 3px; }
+nav .lang .lg { padding: 4px 9px; border-radius: 999px; color: var(--muted); }
+html[lang="en"] nav .lang .lg[data-l="en"], html[lang="el"] nav .lang .lg[data-l="el"] { background: var(--accent); color: var(--on-accent); }
 nav .lang:hover { border-color: var(--accent); text-decoration: none; }
 nav a.lang { color: var(--text); }
 nav a.get { color: var(--accent); font-weight: 700; white-space: nowrap; }
@@ -179,6 +182,7 @@ html[data-os="android"] .cta-row .btn.android { order: -1; background: var(--acc
 .wframe { position: relative; width: min(230px, 62vw); aspect-ratio: 422 / 514; margin: 0 auto; border-radius: 22%/18%; border: 7px solid #2b2d31; background: #000; overflow: visible; box-shadow: 0 30px 70px rgba(0,0,0,.55); }
 .wframe::after { content: ""; position: absolute; right: -15px; top: 24%; width: 8px; height: 15%; border-radius: 4px; background: #3a3d42; }
 .wframe .clip { position: absolute; inset: 0; border-radius: 19%/15.5%; overflow: hidden; }
+.wframe { touch-action: pan-y; }
 .wframe img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .6s ease; }
 .wframe img.on { opacity: 1; }
 .wdots { display: flex; gap: 4px; justify-content: center; margin-top: 16px; }

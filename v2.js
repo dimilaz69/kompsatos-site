@@ -23,7 +23,7 @@
         var p = pair.split(':'); el.setAttribute(p[0], t(p[1]));
       });
     });
-    var b = $('#langBtn'); if (!K.fixed) { b.textContent = l === 'el' ? 'English' : 'Ελληνικά'; b.lang = l === 'el' ? 'en' : 'el'; }
+    var b = $('#langBtn'); if (!K.fixed) b.setAttribute('aria-label', l === 'el' ? 'English' : 'Ελληνικά');
     if (os !== 'desktop') $$('.cta-row .btn').forEach(function (a) {
       var other = a.classList.contains(os === 'ios' ? 'android' : 'ios');
       if (other) a.innerHTML = t(a.classList.contains('android') ? 'cta.android.short' : 'cta.ios.short');
@@ -155,6 +155,13 @@
       btns.forEach(function (b, k) { b.setAttribute('aria-pressed', k === n); });
     }
     items.forEach(function (li, k) { li.addEventListener('click', function () { show(k); hold(); }); });
+    var x0 = null, y0 = 0, fr = $('.wframe');
+    fr.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, { passive: true });
+    fr.addEventListener('touchend', function (e) {
+      if (x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0; x0 = null;
+      if (Math.abs(dx) > 35 && Math.abs(dx) > Math.abs(dy) * 1.5) { show((cur + (dx < 0 ? 1 : imgs.length - 1)) % imgs.length); hold(); }
+    }, { passive: true });
     function play() { if (reduce) return; clearInterval(timer); timer = setInterval(function () { show((cur + 1) % imgs.length); }, 3200); }
     function hold() { clearInterval(timer); timer = setTimeout(play, 9000); }
     show(0);
