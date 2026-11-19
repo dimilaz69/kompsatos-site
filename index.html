@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-os="desktop">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <script>try{var l=localStorage.getItem('kLang');if(!l&&(navigator.language||'').toLowerCase().indexOf('el')===0)location.replace('el/'+location.hash)}catch(e){}</script>
   <title>Kompsatos — evidence-based training app for iPhone and Android</title>
-  <meta name="description" content="Kompsatos is a training app built by a physiotherapist who lifts. Progression, records, recovery and nutrition guidance grounded in published research. Join the beta on iPhone or Android.">
+  <meta name="description" content="Kompsatos is a training app built by a physiotherapist who lifts. Plans, load suggestions, records and an Apple Watch app, each rule with its source. Free on iPhone and Android.">
   <link rel="canonical" href="https://www.kompsatos.com/">
   <link rel="alternate" hreflang="en" href="https://www.kompsatos.com/">
   <link rel="alternate" hreflang="el" href="https://www.kompsatos.com/el/">
@@ -14,332 +15,367 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="el_GR">
   <meta property="og:title" content="Kompsatos — evidence-based training app for iPhone and Android">
-  <meta property="og:description" content="A training app built by a physiotherapist who lifts. Every rule inside comes with its source. Join the beta on iPhone or Android.">
+  <meta property="og:description" content="Kompsatos is a training app built by a physiotherapist who lifts. Plans, load suggestions, records and an Apple Watch app, each rule with its source. Free on iPhone and Android.">
   <meta property="og:url" content="https://www.kompsatos.com/">
   <meta property="og:image" content="https://www.kompsatos.com/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Kompsatos: train by the evidence. Evidence-based training app for iPhone and Android, built by a physiotherapist.">
+  <meta property="og:image:alt" content="Train by the evidence. Kompsatos.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Kompsatos — evidence-based training app for iPhone and Android">
-  <meta name="twitter:description" content="A training app built by a physiotherapist who lifts. Every rule inside comes with its source. Join the beta on iPhone or Android.">
+  <meta name="twitter:description" content="Kompsatos is a training app built by a physiotherapist who lifts. Plans, load suggestions, records and an Apple Watch app, each rule with its source. Free on iPhone and Android.">
   <meta name="twitter:image" content="https://www.kompsatos.com/og.png">
   <meta name="theme-color" content="#101214">
   <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="fonts/sofia-sans-condensed-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="v2.css">
   <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://www.kompsatos.com/#org",
-        "name": "Kompsatos",
-        "alternateName": ["KOMPSATOS", "Kompsatos app"],
-        "url": "https://www.kompsatos.com/",
-        "logo": "https://www.kompsatos.com/apple-touch-icon.png",
-        "email": "hello@kompsatos.com",
-        "founder": { "@type": "Person", "name": "Dimitris Lazaridis", "jobTitle": "Physiotherapist" },
-        "sameAs": [
-          "https://www.instagram.com/kompsatosapp",
-          "https://www.tiktok.com/@kompsatos",
-          "https://www.youtube.com/@kompsatosapp"
-        ]
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "Kompsatos",
-        "alternateName": "Kompsatos app",
-        "url": "https://www.kompsatos.com/",
-        "applicationCategory": "HealthApplication",
-        "operatingSystem": "iOS, Android",
-        "description": "A training app built by a physiotherapist who lifts. Progression rules, records, recovery and nutrition guidance grounded in published research.",
-        "inLanguage": ["en", "el"],
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-        "author": { "@id": "https://www.kompsatos.com/#org" }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          { "@type": "Question", "name": "Is Kompsatos free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The coach is free, always: logging, plans, load suggestions, records, guidance, export of your data and the rest timer on your Lock Screen. A paid Pro tier is planned for extras such as full chart history and Apple Watch." } },
-          { "@type": "Question", "name": "When do I get access to the beta?", "acceptedAnswer": { "@type": "Answer", "text": "Right away. On iPhone, open the beta link, install Apple's TestFlight app if it asks, then tap Install. On Android, join the testers group with the Google account on your phone, then open the testing link, tap Become a tester and install Kompsatos from Google Play. Places on iPhone are limited; if the beta is full, join the waitlist and you will hear from us when places open." } },
-          { "@type": "Question", "name": "Is there an Android version?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, in beta. Join the testers group with the Google account on your phone, then open the testing link and tap Become a tester; the app installs from Google Play like any other. Google opens an app to everyone after a group of testers has used it for 14 days, so every Android tester brings the public release closer." } },
-          { "@type": "Question", "name": "Do I need an account, and where does my data go?", "acceptedAnswer": { "@type": "Answer", "text": "No account is needed. As a guest everything stays on your phone. With an account, and only with your explicit consent, your training and your settings are backed up to a database in Frankfurt, Germany, so you can restore them on another phone. No ads, no analytics, and your data is never sold." } },
-          { "@type": "Question", "name": "Is this medical advice?", "acceptedAnswer": { "@type": "Answer", "text": "No. Kompsatos gives training information based on published research. If you have pain, an injury or a medical condition, talk to a qualified health professional." } }
-        ]
-      }
-    ]
+   "@type": "Organization",
+   "@id": "https://www.kompsatos.com/#org",
+   "name": "Kompsatos",
+   "alternateName": [
+    "KOMPSATOS",
+    "Kompsatos app"
+   ],
+   "url": "https://www.kompsatos.com/",
+   "logo": "https://www.kompsatos.com/apple-touch-icon.png",
+   "email": "hello@kompsatos.com",
+   "founder": {
+    "@type": "Person",
+    "name": "Dimitris Lazaridis",
+    "jobTitle": "Physiotherapist"
+   },
+   "sameAs": [
+    "https://www.instagram.com/kompsatosapp",
+    "https://www.tiktok.com/@kompsatos",
+    "https://www.youtube.com/@kompsatosapp"
+   ]
+  },
+  {
+   "@type": "SoftwareApplication",
+   "name": "Kompsatos",
+   "alternateName": "Kompsatos app",
+   "url": "https://www.kompsatos.com/",
+   "applicationCategory": "HealthApplication",
+   "operatingSystem": "iOS, Android, watchOS",
+   "description": "Kompsatos is a training app built by a physiotherapist who lifts. Plans, load suggestions, records and an Apple Watch app, each rule with its source. Free on iPhone and Android.",
+   "inLanguage": [
+    "en",
+    "el"
+   ],
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+   },
+   "author": {
+    "@id": "https://www.kompsatos.com/#org"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is Kompsatos free?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The coach is free, always: logging, plans, load suggestions, records, guidance, export of your data and the rest timer on your Lock Screen. A paid Pro tier is planned for extras such as full chart history (Free shows 3 months), Apple Watch, widgets and themes, at a planned €3.99 a month or €29.99 a year. Prices may change before launch."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "When do I get access to the beta?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Right away. On iPhone, open the beta link, install Apple's TestFlight app if it asks, then tap Install. On Android it takes two steps, on the Android page. Places on iPhone are limited; if the beta is full, join the waitlist and you will hear from us when places open."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need an account, and where does my data go?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No account is needed. As a guest everything stays on your phone. With an account, and only with your explicit consent, your training and your settings are backed up to a database in Frankfurt, Germany, so you can restore them on another phone. No ads, no analytics, and your data is never sold. Details in the privacy policy."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does it work without an Apple Watch?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Everything works on the phone alone, on iPhone and on Android. The watch is an extra for logging from your wrist."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is this medical advice?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Kompsatos gives training information based on published research. If you have pain, an injury or a medical condition, talk to a qualified health professional."
+     }
+    }
+   ]
   }
+ ]
+}
   </script>
 </head>
 <body>
 
-<a class="skip" href="#main">Skip to content</a>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 
 <header class="site">
   <div class="wrap">
-    <a class="wordmark" href="/">KOMPSATOS</a>
+    <a class="brand" href="#top" aria-label="Kompsatos">
+      <svg viewBox="0 0 100 100" aria-hidden="true"><rect x="2" y="46.5" width="96" height="7" rx="3.5" fill="#E9E7E2"/><rect x="9" y="29" width="11" height="42" rx="4.5" fill="#E9E7E2"/><rect x="21" y="20" width="11" height="60" rx="4.5" fill="#E9E7E2"/><rect x="56" y="20" width="11" height="60" rx="4.5" fill="#E9E7E2"/><rect x="68" y="26" width="11" height="48" rx="4.5" fill="#E9E7E2"/><rect x="80" y="32" width="11" height="36" rx="4.5" fill="#32DBB8"/></svg>
+      KOMPSATOS
+    </a>
     <nav aria-label="Sections">
-      <a href="#features">Features</a>
-      <a href="#evidence">Evidence</a>
-      <a href="#roadmap">Roadmap</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#faq">FAQ</a>
-      <a class="lang" href="/el/" hreflang="el" lang="el">Ελληνικά</a>
-      <a class="cta-small" href="#beta">Join the beta</a>
+      <a href="#features" data-i18n="nav.features">The app</a>
+      <a href="#watch" data-i18n="nav.watch">Watch</a>
+      <a href="#evidence" data-i18n="nav.evidence">Evidence</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a class="lang" id="langBtn" href="el/" hreflang="el" lang="el">Ελληνικά</a>
+      <a class="get" href="#get" data-i18n="nav.get">Get the app</a>
     </nav>
   </div>
 </header>
 
 <main id="main">
-  <div class="wrap">
+  <div id="viewHome">
+  <div class="wrap" id="top">
     <div class="hero">
       <div>
-        <div class="eyebrow">iPhone &amp; Android beta · free</div>
-        <h1>Train by the evidence.</h1>
-        <p class="lead">Kompsatos is a training app built by a physiotherapist who lifts. Its programs, progression rules, coaching notes and targets are built on published research, not trends.</p>
+        <div class="eyebrow" data-i18n="hero.eyebrow">Free · iPhone &amp; Android beta</div>
+        <h1 data-i18n="hero.h1">Train by the <em>evidence.</em></h1>
+        <p class="sub" data-i18n="hero.sub">The training app built by a physiotherapist who lifts. Every rule inside comes with its source.</p>
         <div class="cta-row">
-          <a class="btn" href="https://testflight.apple.com/join/EJnFbWZ6">Get the iPhone beta</a>
-          <a class="btn ghost" href="#android">Get the Android beta</a>
+          <a class="btn ios" href="https://testflight.apple.com/join/EJnFbWZ6" data-i18n="cta.ios">Get the iPhone beta</a>
+          <a class="btn ghost android" href="/android/" data-i18n="cta.android">Get the Android beta</a>
         </div>
-        <p class="fine">Free. On iPhone through Apple's TestFlight: open the link on your iPhone. On Android through Google Play, in <a href="#android">two steps</a>.</p>
+        <p class="fine top" data-i18n="hero.fine">Free, no ads. iPhone through Apple's TestFlight, Android through Google Play.</p>
       </div>
-      <div class="phone"><img src="career.jpg" alt="Kompsatos Athlete Career screen: level 15, 13200 XP, 31 of 172 achievements, the title Apprentice and the Aegean accent colour" width="640" height="1282" fetchpriority="high" decoding="async"></div>
+      <div>
+        <div class="stage">
+          <div class="demo" id="demo" role="img" data-i18n-attr="aria-label:demo.aria" aria-label="Animated demo: a set is saved on the phone, the rest timer runs on the phone and the watch, and the next set is ready.">
+            <div class="phone" aria-hidden="true">
+              <div class="island"><svg viewBox="0 0 36 36"><circle class="ring-bg" cx="18" cy="18" r="14" fill="none" stroke-width="5"/><circle class="ring-fg" data-ring cx="18" cy="18" r="14" fill="none" stroke-width="5" stroke-linecap="round" transform="rotate(-90 18 18)"/></svg><b data-clock>1:30</b></div>
+              <div class="scr">
+                <div class="p-top"><span>‹</span><b data-i18n="demo.exercise">Bench Press</b><span>⇄</span></div>
+                <div class="p-target" data-i18n="demo.target">Target: 3 × 6–10 | Rest: 1:30</div>
+                <div class="p-rest"><div><div class="in"><svg viewBox="0 0 36 36"><circle class="ring-bg" cx="18" cy="18" r="14" fill="none" stroke-width="5"/><circle class="ring-fg" data-ring cx="18" cy="18" r="14" fill="none" stroke-width="5" stroke-linecap="round" transform="rotate(-90 18 18)"/></svg><div><small data-i18n="demo.rest">Rest</small><b data-clock>1:30</b></div></div></div></div>
+                <div class="p-card">
+                  <div class="p-lab" data-i18n="demo.today">Today</div>
+                  <div class="p-big"><b>80 kg</b><span>9 <span data-i18n="demo.reps">reps</span></span></div>
+                  <p class="p-note" data-i18n="demo.note">Performance is progressing. Keep load steady while building reps before adding weight.</p>
+                </div>
+                <div class="p-step"><span class="pm">–</span><div class="fld"><small data-i18n="demo.weight">Weight (kg)</small><b>80</b></div><span class="pm">+</span></div>
+                <div class="p-step"><span class="pm">–</span><div class="fld"><small data-i18n="demo.repsLabel">Reps</small><b id="dReps">9</b></div><span class="pm" id="dPlus">+</span></div>
+                <div class="p-foot"><small id="dLast"></small><div class="p-save" id="dSave"></div></div>
+                <div class="saved-flash" id="dFlash"></div>
+              </div>
+            </div>
+            <div class="watch" id="dWatch" aria-hidden="true">
+              <div class="w-time">8:22</div>
+              <div class="w-set">
+                <div class="w-name" data-i18n="demo.exercise">Bench Press</div>
+                <div class="w-row"><span id="wSet"></span><span class="hr">♥ <span data-hr>132</span></span></div>
+                <div class="w-row"><span data-i18n="demo.wLast">Last: 80 kg × 8</span></div>
+                <div class="w-vals"><div>80<small>kg</small></div><div class="sel"><span id="wReps">9</span><small data-i18n="demo.wReps">reps</small></div><div>2<small>RIR</small></div></div>
+                <div class="w-log" data-i18n="demo.wLog">Log set</div>
+              </div>
+              <div class="w-rest">
+                <svg viewBox="0 0 36 36"><circle class="ring-bg" cx="18" cy="18" r="14" fill="none" stroke-width="4.5"/><circle class="ring-fg" data-ring cx="18" cy="18" r="14" fill="none" stroke-width="4.5" stroke-linecap="round" transform="rotate(-90 18 18)"/></svg>
+                <small data-i18n="demo.rest">Rest</small>
+                <b data-clock>1:30</b>
+                <span class="hr">♥ <span data-hr>132</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="demo-cap" data-i18n="demo.caption">A set, the rest, the next set. Tap Save set to try it.</p>
+        <p class="fine under" style="text-align:center" data-i18n="hero.fine">Free, no ads. iPhone through Apple's TestFlight, Android through Google Play.</p>
+      </div>
     </div>
+  </div>
+
+  <div class="band">
+    <div class="wrap">
+      <ul class="trust">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="trust.1">Built by a physiotherapist</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="trust.2">Every rule has its source</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="trust.3">Free. No ads, no tracking</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="band pillar">
+    <div class="wrap"><p data-i18n="pillar.text">Training is a long journey. It takes organisation, dedication and persistence: in your plan, your food and your sleep. <strong>You don't compare yourself with anyone. Only with who you were yesterday.</strong></p></div>
   </div>
 
   <section id="features">
     <div class="wrap">
-      <div class="eyebrow">What it does</div>
-      <h2>A coach that reads your training, not your mood.</h2>
-      <div class="grid">
-        <div class="card">
-          <span class="tag">Training</span>
-          <h3>Plans built from the research</h3>
-          <p>Your program sets weekly sets per muscle within published ranges, puts the heavy lifts first, and keeps a session to at most 24 working sets when you train four or more days a week. Every day shows how long it really takes, warm-up sets included. Your next load comes from your own recent sessions (for machines and cable stacks, on the same one), and a weekly review sums up what you did.</p>
-        </div>
-        <div class="card">
-          <span class="tag">Records</span>
-          <h3>Records that are real</h3>
-          <p>Your first log of an exercise is your starting point, not a record. Records count per exercise and per machine, and a jump bigger than training can explain (more than 1.5× your heaviest load) starts a new baseline instead of a fake record. One badge per set.</p>
-        </div>
-        <div class="card">
-          <span class="tag">In the gym</span>
-          <h3>Made for the gym floor</h3>
-          <p>The rest timer runs on your Lock Screen and in the Dynamic Island on iPhone, and in a notification on Android. A plate calculator and warm-up sets for your top lifts, notes on any set, undo when you tap the wrong thing, and reminders only on your training days.</p>
-        </div>
-        <div class="card">
-          <span class="tag">Recovery &amp; nutrition</span>
-          <h3>The rest of your week, in context</h3>
-          <p>Sleep, body weight and waist trends sit next to your training, with protein and rate-of-loss guidance taken from meta-analyses. On iPhone, body weight and sleep can come straight from Apple Health, and your finished workouts can be saved there, if you turn it on.</p>
-        </div>
-        <div class="card">
-          <span class="tag">Progress</span>
-          <h3>Rewards for consistency, not for overdoing it</h3>
-          <p>172 achievements, 100 levels, titles and colours you unlock. Points come from keeping your plan, never from extra volume. Charts follow your lifts and your body, with a body outline drawn from your own measurements.</p>
-        </div>
-        <div class="card">
-          <span class="tag">Your data</span>
-          <h3>Yours, on your phone</h3>
-          <p>No account needed. With an account and your consent, a cloud backup brings your training, programs, calendar changes and settings to a new phone. Export everything to CSV, JSON or PDF for your coach or physio, free.</p>
-        </div>
+      <div class="eyebrow" data-i18n="feat.eyebrow">What it does</div>
+      <h2 data-i18n="feat.h2">A coach that reads your training, not your mood.</h2>
+      <div class="tabs" role="tablist" id="tabs">
+        <button type="button" role="tab" id="tab1" aria-controls="panel" aria-selected="true" data-i18n="feat.tab1">Your plan</button>
+        <button type="button" role="tab" id="tab2" aria-controls="panel" aria-selected="false" tabindex="-1" data-i18n="feat.tab2">In the gym</button>
+        <button type="button" role="tab" id="tab3" aria-controls="panel" aria-selected="false" tabindex="-1" data-i18n="feat.tab3">Your progress</button>
       </div>
-
-      <div class="shots">
-        <figure><div class="phone"><img src="records.jpg" alt="Personal Records screen: the latest records per exercise, with volume and rep records for Romanian deadlift, back squat, barbell row and bench press" width="640" height="1282" loading="lazy" decoding="async"></div><figcaption>Records per exercise and per machine</figcaption></figure>
-        <figure><div class="phone"><img src="achievements.jpg" alt="Achievements screen: level 15, 31 of 172 unlocked, recent unlocks 50 Workouts and 250 Tonnes Lifted, and 480 of 500 working sets towards the next one" width="640" height="1282" loading="lazy" decoding="async"></div><figcaption>Achievements that track real progress</figcaption></figure>
-        <figure><div class="phone"><img src="accents.jpg" alt="Accent colour picker with Aegean selected; Iron unlocks at level 20 and Chalk at level 30" width="640" height="1282" loading="lazy" decoding="async"></div><figcaption>Colours that unlock as you level up</figcaption></figure>
+      <div class="panel" id="panel" role="tabpanel" aria-labelledby="tab1">
+        <div><div class="shot"><img id="fImg" width="720" height="1565" decoding="async" loading="lazy" data-i18n-attr="src:img.program;alt:feat.1.alt" src="shots/en/program.webp" alt="Program screen: the active program with its training days, muscles per day and how long each day takes"></div><div class="fdots" aria-hidden="true"><i class="on"></i><i></i><i></i></div></div>
+        <div class="copy">
+          <h3 id="fH" data-i18n="feat.1.h">A plan built from the research</h3>
+          <ul>
+            <li id="fA" data-i18n="feat.1.a">Weekly sets per muscle inside the published ranges, and lower when you start out.</li>
+            <li id="fB" data-i18n="feat.1.b">Heavy lifts open the day. A session stays at 24 working sets or fewer when you train four or more days a week.</li>
+            <li id="fC" data-i18n="feat.1.c">Every day shows how long it really takes, warm-up sets included.</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="evidence" class="evidence">
+  <section id="watch">
+    <div class="wrap watchsec">
+      <div>
+        <div class="wframe"><div class="clip">
+          <img class="on" width="422" height="514" loading="lazy" decoding="async" data-i18n-attr="src:img.watch1;alt:watch.alt1" src="shots/en/watch1.webp" alt="Watch screen: Dumbbell Bench Press, set 2 of 4, heart rate 138, weight 27.5 kg, 10 reps, Log set button">
+          <img width="422" height="514" loading="lazy" decoding="async" data-i18n-attr="src:img.watch2;alt:watch.alt2" src="shots/en/watch2.webp" alt="Watch screen: rest ring with 1:13 left">
+          <img width="422" height="514" loading="lazy" decoding="async" data-i18n-attr="src:img.watch3;alt:watch.alt3" src="shots/en/watch3.webp" alt="Watch screen: incline treadmill, 7:52 of a 20:00 target, heart rate 138 in zone 135–140">
+          <img width="422" height="514" loading="lazy" decoding="async" data-i18n-attr="src:img.watch4;alt:watch.alt4" src="shots/en/watch4.webp" alt="Watch screen: save the workout on your iPhone; the watch keeps recording until then">
+        </div></div>
+        <div class="wdots" id="wdots"></div>
+      </div>
+      <div>
+        <div class="eyebrow" data-i18n="watch.eyebrow">Apple Watch</div>
+        <h2 data-i18n="watch.h2">Leave the phone in your bag.</h2>
+        <p class="lead" data-i18n="watch.lead">Log the set from your wrist. The watch taps you when the rest is over.</p>
+        <ul class="wlist" id="wlist">
+          <li class="on" data-i18n="watch.1"><strong>Sets.</strong> Weight and reps come filled in from last time. Turn the Crown, tap Log set.</li>
+          <li data-i18n="watch.2"><strong>Rest.</strong> The ring counts down and your wrist buzzes at zero.</li>
+          <li data-i18n="watch.3"><strong>Cardio.</strong> Time against your target, and your heart rate against its zone.</li>
+          <li data-i18n="watch.4"><strong>Finish.</strong> The watch keeps recording until you save the workout on your iPhone.</li>
+        </ul>
+        <p class="fine" style="margin:16px 0 0" data-i18n="watch.fine">Phone out of reach? Sets are kept on the watch and delivered when it is back. Apple Watch is free until Pro launches.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="evidence">
     <div class="wrap">
-      <div class="eyebrow">Evidence first</div>
-      <h2>The numbers come with sources.</h2>
-      <p class="lead">A few of the rules inside the app, and where they come from.</p>
-      <div class="grid">
-        <div class="card">
-          <div class="big">67 studies</div>
-          <p>More weekly sets build more muscle, with diminishing returns. Your weekly sets per muscle are set within that dose-response, and lower when you start out.</p>
-          <cite>Pelland JC et al. Sports Med 2026;56(2):481–505 (meta-regression, 2,058 participants).</cite>
+      <div class="eyebrow" data-i18n="dose.eyebrow">Try it</div>
+      <h2 data-i18n="dose.h2">How many sets a week?</h2>
+      <p class="lead" data-i18n="dose.lead">More weekly sets build more muscle, but each step costs more than the last. Drag to see what 67 studies found.</p>
+      <div class="dose">
+        <div class="dose-grid">
+          <div>
+            <div class="dose-read">
+              <div class="num" id="doseNum">12</div>
+              <div class="unit" data-i18n="dose.unit">sets / week</div>
+              <div class="dose-tier" aria-live="polite"><b class="name" id="doseName"></b><span id="doseText"></span></div>
+            </div>
+            <label for="doseRange" data-i18n="dose.label">Weekly sets for one muscle</label>
+            <input type="range" id="doseRange" min="0" max="45" step="1" value="12">
+          </div>
+          <div>
+            <svg id="doseSvg" viewBox="0 0 640 310" role="img" aria-labelledby="doseName doseText"></svg>
+          </div>
         </div>
-        <div class="card">
-          <div class="big">≈ 11 sets</div>
-          <p>Per muscle in one session, gains levelled off at about this point. The app aims to keep a muscle's sets in one session below it and spreads the rest of the week over its other days.</p>
-          <cite>Remmert JF et al. SportRxiv 2025, preprint (meta-regression of per-session volume).</cite>
+        <p class="dose-app" data-i18n="dose.app">Kompsatos sets your weekly sets per muscle inside this dose-response, and lower when you start out.</p>
+        <details class="note"><summary data-i18n="note.sum">How to read these numbers</summary><p class="fine" data-i18n="dose.note">Averages across studies; people differ. A set that trains a muscle indirectly counts as half. One detectable step is a 2.05% gain in muscle size, the smallest effect the analysis could tell apart. The curve joins the tier limits of Table 3. Few studies go above about 25 sets, so estimates there are less certain.</p></details>
+        <p class="fine dose-note"><cite><span data-i18n="dose.cite">Pelland JC et al. Sports Med 2026;56(2):481–505. Meta-regression, 67 studies, 2,058 participants.</span> <a href="https://doi.org/10.1007/s40279-025-02344-w">doi:10.1007/s40279-025-02344-w</a></cite></p>
+      </div>
+
+      <p style="margin:26px 0 0"><a class="btn ghost" href="evidence.html" data-i18n="r.more">All the sources, and a strength check →</a></p>
+    </div>
+  </section>
+
+  <section id="journey">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="jr.eyebrow">The long run</div>
+      <h2 data-i18n="jr.h2">One plate at a time.</h2>
+      <p class="lead" data-i18n="jr.lead">What the app does for you along the way.</p>
+      <div class="journey" id="jr" style="margin-top:22px">
+        <div class="bar-sticky" aria-hidden="true">
+          <svg viewBox="0 0 100 64"><rect x="2" y="28.5" width="96" height="7" rx="3.5" fill="#E9E7E2"/><rect class="pl on" x="9" y="11" width="11" height="42" rx="4.5" fill="#E9E7E2"/><rect class="pl on" x="21" y="2" width="11" height="60" rx="4.5" fill="#E9E7E2"/><rect class="pl on" x="56" y="2" width="11" height="60" rx="4.5" fill="#E9E7E2"/><rect class="pl on" x="68" y="8" width="11" height="48" rx="4.5" fill="#E9E7E2"/><rect class="pl on" x="80" y="14" width="11" height="36" rx="4.5" fill="#32DBB8"/></svg>
         </div>
-        <div class="card">
-          <div class="big">Heavy lifts first</div>
-          <p>Strength rose most in the exercises done first in a session. Compound lifts open the day and smaller muscles come last, so a long day trims the arms, not the squat.</p>
-          <cite>Nunes JP et al. Eur J Sport Sci 2021;21(2):149–157 (meta-analysis).</cite>
-        </div>
-        <div class="card">
-          <div class="big">1.6–2.2 g/kg</div>
-          <p>Daily protein beyond which extra protein added little to muscle gain in adults doing resistance training.</p>
-          <cite>Morton RW et al. Br J Sports Med 2018;52:376–384 (meta-analysis, 49 trials).</cite>
-        </div>
-        <div class="card">
-          <div class="big">0.5–1% / week</div>
-          <p>Rate of body-weight loss recommended to keep muscle during a cut.</p>
-          <cite>Helms ER, Aragon AA, Fitschen PJ. J Int Soc Sports Nutr 2014;11:20.</cite>
-        </div>
-        <div class="card">
-          <div class="big">809,986 entries</div>
-          <p>Tested powerlifting results behind the strength levels you can unlock for squat, bench press and deadlift.</p>
-          <cite>van den Hoek DJ et al. J Sci Med Sport 2024;27(10):734–742.</cite>
-        </div>
-        <div class="card">
-          <div class="big">≤ 10 reps</div>
-          <p>Estimated maxes are trusted up to 10 reps to failure. Longer sets count only as a lower bound, because predictions get less accurate as reps go up.</p>
-          <cite>Reynolds JM, Gordon TJ, Robergs RA. J Strength Cond Res 2006;20(3):584–592.</cite>
-        </div>
+        <ol class="miles">
+          <li class="on"><span class="w" data-i18n="jr.1.w">Day 1</span><span class="t" data-i18n="jr.1.t">Your first log is your starting point, not a record.</span></li>
+          <li class="on"><span class="w" data-i18n="jr.2.w">Every session</span><span class="t" data-i18n="jr.2.t">Your next load comes from what you did, not from a template.</span></li>
+          <li class="on"><span class="w" data-i18n="jr.3.w">Every week</span><span class="t" data-i18n="jr.3.t">A weekly review sums up what you did against your plan.</span></li>
+          <li class="on"><span class="w" data-i18n="jr.4.w">Month after month</span><span class="t" data-i18n="jr.4.t">Levels and titles come from keeping your plan, never from doing more than it asks.</span></li>
+          <li class="on"><span class="w" data-i18n="jr.5.w">A year in</span><span class="t" data-i18n="jr.5.t">Charts of your lifts and a body outline drawn from your own measurements. The only comparison is with you.</span></li>
+        </ol>
       </div>
     </div>
   </section>
 
   <section id="founder">
     <div class="wrap">
-      <div>
-        <div class="eyebrow">Built in public</div>
-        <h2>Hi, I'm Dimitris.</h2>
-        <p class="byline">Dimitris Lazaridis · Physiotherapist · Heraklion, Crete</p>
-        <p class="lead">I'm a physiotherapist and I train. I built Kompsatos to fix the mistakes I and the athletes around me made for years. I share every step of the build, the research behind each decision, and my own training with the app. The name comes from the Kompsatos, a river in Thrace, northern Greece.</p>
-        <div class="socials">
-          <a href="https://www.instagram.com/kompsatosapp" target="_blank" rel="noopener">Instagram <span>@kompsatosapp</span></a>
-          <a href="https://www.tiktok.com/@kompsatos" target="_blank" rel="noopener">TikTok <span>@kompsatos</span></a>
-          <a href="https://www.youtube.com/@kompsatosapp" target="_blank" rel="noopener">YouTube <span>@kompsatosapp</span></a>
-        </div>
+      <div class="eyebrow" data-i18n="fo.eyebrow">Built in public</div>
+      <h2 data-i18n="fo.h2">Hi, I'm Dimitris.</h2>
+      <p class="byline" data-i18n="fo.by">Dimitris Lazaridis · Physiotherapist · Heraklion, Crete</p>
+      <p class="lead" data-i18n="fo.p">I'm a physiotherapist and I train. I built Kompsatos to fix the mistakes I and the athletes around me made for years. I share every step of the build, the research behind each decision, and my own training with the app. The name comes from the Kompsatos, a river in Thrace, northern Greece.</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/kompsatosapp" rel="noopener">Instagram <span>@kompsatosapp</span></a>
+        <a href="https://www.tiktok.com/@kompsatos" rel="noopener">TikTok <span>@kompsatos</span></a>
+        <a href="https://www.youtube.com/@kompsatosapp" rel="noopener">YouTube <span>@kompsatosapp</span></a>
       </div>
-    </div>
-  </section>
-
-  <section id="roadmap">
-    <div class="wrap">
-      <div class="eyebrow">Roadmap</div>
-      <h2>Where it's going.</h2>
-      <ul class="roadmap">
-        <li><span class="when">Now</span><span>Open beta on iPhone through TestFlight and on Android through Google Play testing, with a weekly review of your training, Apple Health on iPhone, and a cloud backup that brings your training and settings to a new phone.</span></li>
-        <li><span class="when">Next</span><span>Kompsatos on Google Play for everyone, and share cards for your progress.</span></li>
-        <li><span class="when">Later</span><span>Leagues: weekly groups, country and world rankings. They open once 100 athletes have joined.</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="pricing">
-    <div class="wrap">
-      <div class="eyebrow">Pricing</div>
-      <h2>The coach is free. Always.</h2>
-      <p class="lead">Training guidance should never sit behind a paywall. Pro adds depth and convenience on top. No ads, ever, and your data is never sold.</p>
-      <div class="plans">
-        <div class="card plan">
-          <span class="tag">Free · forever</span>
-          <h3>Kompsatos</h3>
-          <div class="price">€0</div>
-          <ul>
-            <li>Unlimited logging, plans and load suggestions</li>
-            <li>Records and estimated maxes per machine</li>
-            <li>Coaching insights, sleep, body and nutrition guidance</li>
-            <li>All achievements, levels, titles and colours</li>
-            <li>Weekly review, and leagues when they launch</li>
-            <li>Rest timer on the Lock Screen and Dynamic Island</li>
-            <li>Export your data to CSV, JSON and PDF</li>
-            <li>Backup and restore</li>
-          </ul>
-        </div>
-        <div class="card plan">
-          <span class="tag">Pro · planned</span>
-          <h3>Kompsatos Pro</h3>
-          <div class="price">€3.99<small> / month</small></div>
-          <div class="fine" style="margin-top:0">or €29.99 / year</div>
-          <ul>
-            <li>Full chart history (Free shows 3 months)</li>
-            <li>Apple Watch logging and rest timer (free until Pro launches)</li>
-            <li>Home-screen widgets</li>
-            <li>Pro icons and themes</li>
-            <li>Early access to new features</li>
-          </ul>
-        </div>
-        <div class="card plan featured">
-          <span class="tag">Beta only</span>
-          <h3>Founding Athletes</h3>
-          <div class="price">12 months of Pro free</div>
-          <ul>
-            <li>For beta testers, on iPhone or Android, who stay active for 4 weeks or more</li>
-            <li>A permanent “Founding Athlete” title that can never be bought</li>
-          </ul>
-          <a class="btn" href="#beta" style="margin-top:16px">Join the beta</a>
-        </div>
-      </div>
-      <p class="fine">Prices are planned and may change before launch. Local prices vary by country. Nothing that is earned in the app (XP, league places, titles, season rewards) can ever be bought.</p>
     </div>
   </section>
 
   <section id="faq">
     <div class="wrap">
-      <div class="eyebrow">FAQ</div>
-      <h2>Questions people ask.</h2>
+      <h2 data-i18n="pr.h2">The coach is free. Always.</h2>
+      <p class="lead" data-i18n="pr.p">Training guidance should never sit behind a paywall. No ads, ever, and your data is never sold.</p>
+      <p class="found" data-i18n="pr.found"><strong>Founding Athletes.</strong> Beta testers who stay active for 4 weeks or more get 12 months of Pro free when it launches, and a title that can never be bought.</p>
       <div class="faq">
-        <details>
-          <summary>Is Kompsatos free?</summary>
-          <p>Yes. The coach is free, always: logging, plans, load suggestions, records, guidance, export of your data and the rest timer on your Lock Screen. A paid Pro tier is planned for extras such as full chart history and Apple Watch.</p>
-        </details>
-        <details>
-          <summary>When do I get access to the beta?</summary>
-          <p>Right away. On iPhone, open the <a href="https://testflight.apple.com/join/EJnFbWZ6">beta link</a>, install Apple's TestFlight app if it asks, then tap Install. On Android, follow the <a href="#android">two steps below</a>. Places on iPhone are limited; if the beta is full, <a href="https://tally.so/r/2EMQMA">join the waitlist</a> and you will hear from us when places open.</p>
-        </details>
-        <details>
-          <summary>Is there an Android version?</summary>
-          <p>Yes, in beta. <a href="https://groups.google.com/g/kompsatos-testers">Join the testers group</a> with the Google account on your phone, then open the <a href="https://play.google.com/apps/testing/com.dimitrislazaridis.coachapp">testing link</a> and tap Become a tester; the app installs from Google Play like any other. Google opens an app to everyone after a group of testers has used it for 14 days, so every Android tester brings the public release closer.</p>
-        </details>
-        <details>
-          <summary>Do I need an account, and where does my data go?</summary>
-          <p>No account is needed. As a guest everything stays on your phone. With an account, and only with your explicit consent, your training and your settings are backed up to a database in Frankfurt, Germany, so you can restore them on another phone. No ads, no analytics, and your data is never sold. Details in the <a href="privacy.html">privacy policy</a>.</p>
-        </details>
-        <details>
-          <summary>Is this medical advice?</summary>
-          <p>No. Kompsatos gives training information based on published research. If you have pain, an injury or a medical condition, talk to a qualified health professional.</p>
-        </details>
+        <h2 style="margin-top:30px" data-i18n="faq.h2">Questions people ask.</h2>
+        <details><summary data-i18n="faq.1.q">Is Kompsatos free?</summary><p data-i18n="faq.1.a">Yes. The coach is free, always: logging, plans, load suggestions, records, guidance, export of your data and the rest timer on your Lock Screen. A paid Pro tier is planned for extras such as full chart history (Free shows 3 months), Apple Watch, widgets and themes, at a planned €3.99 a month or €29.99 a year. Prices may change before launch.</p></details>
+        <details><summary data-i18n="faq.2.q">When do I get access to the beta?</summary><p data-i18n="faq.2.a">Right away. On iPhone, open the beta link, install Apple's TestFlight app if it asks, then tap Install. On Android it takes two steps, on the Android page. Places on iPhone are limited; if the beta is full, <a href="https://tally.so/r/2EMQMA">join the waitlist</a> and you will hear from us when places open.</p></details>
+        <details><summary data-i18n="faq.3.q">Do I need an account, and where does my data go?</summary><p data-i18n="faq.3.a">No account is needed. As a guest everything stays on your phone. With an account, and only with your explicit consent, your training and your settings are backed up to a database in Frankfurt, Germany, so you can restore them on another phone. No ads, no analytics, and your data is never sold. Details in the <a href="privacy.html">privacy policy</a>.</p></details>
+        <details><summary data-i18n="faq.4.q">Does it work without an Apple Watch?</summary><p data-i18n="faq.4.a">Yes. Everything works on the phone alone, on iPhone and on Android. The watch is an extra for logging from your wrist.</p></details>
+        <details><summary data-i18n="faq.5.q">Is this medical advice?</summary><p data-i18n="faq.5.a">No. Kompsatos gives training information based on published research. If you have pain, an injury or a medical condition, talk to a qualified health professional.</p></details>
       </div>
     </div>
   </section>
 
-  <section id="beta" class="signup">
-    <div class="wrap">
-      <div class="eyebrow">Beta</div>
-      <h2>Want in?</h2>
-      <p class="lead">Free, on iPhone and Android.</p>
-      <div class="steps">
-        <div class="card">
-          <span class="tag">iPhone</span>
-          <h3>Through TestFlight</h3>
-          <p>Open the beta link on your iPhone. If it asks, install Apple's TestFlight app, then tap Install.</p>
-          <a class="btn" href="https://testflight.apple.com/join/EJnFbWZ6">Get the iPhone beta</a>
-        </div>
-        <div class="card" id="android">
-          <span class="tag">Android</span>
-          <h3>Through Google Play</h3>
-          <ol>
-            <li><a href="https://groups.google.com/g/kompsatos-testers">Join the testers group</a> with the Google account you use on your phone.</li>
-            <li>Open the <a href="https://play.google.com/apps/testing/com.dimitrislazaridis.coachapp">testing link</a>, tap Become a tester, then install Kompsatos from Google Play.</li>
-          </ol>
-          <a class="btn" href="https://groups.google.com/g/kompsatos-testers">Join the testers group</a>
-        </div>
+  <section id="get" class="get">
+    <div class="wrap"><span id="beta"></span>
+      <h2 data-i18n="get.h2">Start with today's workout.</h2>
+      <p class="lead" data-i18n="get.p">Free, on iPhone and Android.</p>
+      <div class="cta-row">
+        <a class="btn ios" href="https://testflight.apple.com/join/EJnFbWZ6" data-i18n="cta.ios">Get the iPhone beta</a>
+        <a class="btn ghost android" href="/android/" data-i18n="cta.android">Get the Android beta</a>
       </div>
-      <p class="fine">iPhone beta full? <a href="https://tally.so/r/2EMQMA">Join the waitlist</a>; it is only used to tell you about the beta. See the <a href="privacy.html">privacy policy</a>.</p>
+      <div class="qr"><span role="img" data-i18n-attr="aria-label:get.qr.alt" aria-label="QR code that opens kompsatos.com on your phone"><svg xmlns="http://www.w3.org/2000/svg" width="132" height="132" class="segno"><g transform="scale(4)"><path fill="#f4f2ed" d="M0 0h33v33h-33z"/><path class="qrline" stroke="#101214" d="M2 2.5h7m1 0h2m1 0h3m3 0h2m3 0h7m-29 1h1m5 0h1m1 0h1m2 0h1m2 0h4m2 0h1m1 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m5 0h3m4 0h1m2 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m2 0h1m2 0h2m1 0h1m1 0h2m3 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m3 0h3m1 0h2m2 0h3m1 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m3 0h2m5 0h1m2 0h1m1 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-19 1h1m1 0h1m2 0h2m2 0h2m-20 1h1m4 0h3m1 0h2m1 0h1m3 0h1m3 0h1m5 0h2m-29 1h5m2 0h1m4 0h3m1 0h5m2 0h2m1 0h2m-28 1h2m1 0h2m1 0h2m1 0h1m1 0h2m1 0h1m2 0h1m2 0h3m2 0h1m-26 1h1m3 0h2m3 0h2m1 0h1m2 0h1m2 0h3m1 0h2m1 0h1m-26 1h4m1 0h2m1 0h1m1 0h2m1 0h2m1 0h1m4 0h2m4 0h1m-28 1h1m1 0h1m1 0h1m2 0h1m1 0h1m1 0h2m2 0h1m2 0h3m1 0h1m1 0h2m2 0h1m-29 1h11m1 0h1m1 0h2m4 0h2m1 0h1m-23 1h1m1 0h1m1 0h1m2 0h1m1 0h5m4 0h1m1 0h1m2 0h4m-24 1h1m1 0h4m3 0h1m1 0h1m1 0h1m7 0h3m-28 1h3m2 0h1m1 0h4m2 0h2m1 0h2m1 0h1m2 0h1m1 0h2m2 0h1m-29 1h2m1 0h1m1 0h2m5 0h2m2 0h1m1 0h2m5 0h2m1 0h1m-29 1h1m1 0h4m1 0h1m1 0h1m1 0h6m3 0h3m1 0h2m2 0h1m-29 1h1m2 0h2m1 0h1m1 0h2m3 0h2m1 0h2m1 0h6m1 0h1m1 0h1m-21 1h2m4 0h2m2 0h3m3 0h4m-28 1h7m1 0h1m1 0h1m1 0h1m1 0h3m2 0h2m1 0h1m1 0h1m-25 1h1m5 0h1m2 0h2m2 0h2m1 0h1m1 0h3m3 0h2m-26 1h1m1 0h3m1 0h1m4 0h1m4 0h9m2 0h2m-29 1h1m1 0h3m1 0h1m4 0h4m2 0h4m2 0h1m1 0h3m-28 1h1m1 0h3m1 0h1m2 0h2m2 0h1m1 0h1m1 0h1m1 0h9m-28 1h1m5 0h1m1 0h1m1 0h3m1 0h1m1 0h1m4 0h1m2 0h3m1 0h1m-29 1h7m4 0h1m3 0h1m1 0h1m1 0h1m2 0h1m1 0h3"/></g></svg></span><span data-i18n="get.qr">On a computer? Scan with your phone.</span></div>
     </div>
   </section>
+  </div>
 </main>
 
 <footer class="site">
   <div class="wrap">
-    <div><a href="privacy.html">Privacy</a><a href="terms.html">Beta terms</a><a href="support.html">Support</a><a href="mailto:hello@kompsatos.com">hello@kompsatos.com</a></div>
-    <div><a href="https://www.instagram.com/kompsatosapp" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@kompsatos" target="_blank" rel="noopener">TikTok</a><a href="https://www.youtube.com/@kompsatosapp" target="_blank" rel="noopener">YouTube</a></div>
-    <div>© 2026 Kompsatos · Training information, not medical advice.</div>
+    <div><a href="privacy.html" data-i18n="ft.privacy">Privacy</a><a href="terms.html" data-i18n="ft.terms">Beta terms</a><a href="support.html" data-i18n="ft.support">Support</a><a href="mailto:hello@kompsatos.com">hello@kompsatos.com</a></div>
+    <div><a href="https://www.instagram.com/kompsatosapp" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@kompsatos" rel="noopener">TikTok</a><a href="https://www.youtube.com/@kompsatosapp" rel="noopener">YouTube</a></div>
+    <div data-i18n="ft.legal">© 2026 Kompsatos · Training information, not medical advice.</div>
   </div>
 </footer>
 
+<div class="dock" id="dock">
+  <b data-i18n="bar.text">Kompsatos · free</b>
+  <a class="btn" id="dockBtn" href="#get" data-i18n="bar.cta">Get the app</a>
+</div>
+
+<script>window.K={"fixed":true,"lang":"en","str":{"cta.ios.short":{"en":"iPhone beta"},"cta.android.short":{"en":"Android beta"},"demo.last":{"en":"Last time, set {n}: 80 kg × 8 · RIR 2"},"demo.save":{"en":"Save set {n} / 3"},"demo.wSet":{"en":"Set {n} of 3"},"feat.eyebrow":{"en":"What it does"},"feat.h2":{"en":"A coach that reads your training, not your mood."},"feat.tab1":{"en":"Your plan"},"feat.tab2":{"en":"In the gym"},"feat.tab3":{"en":"Your progress"},"feat.1.h":{"en":"A plan built from the research"},"feat.1.a":{"en":"Weekly sets per muscle inside the published ranges, and lower when you start out."},"feat.1.b":{"en":"Heavy lifts open the day. A session stays at 24 working sets or fewer when you train four or more days a week."},"feat.1.c":{"en":"Every day shows how long it really takes, warm-up sets included."},"feat.2.h":{"en":"Made for the gym floor"},"feat.2.a":{"en":"Your next load comes from your own recent sessions. On machines and cable stacks, from the same machine."},"feat.2.b":{"en":"The rest timer runs on your Lock Screen and in the Dynamic Island on iPhone, and in a notification on Android."},"feat.2.c":{"en":"Plate calculator, warm-up sets, notes on any set, and undo when you tap the wrong thing."},"feat.3.h":{"en":"Records that are real"},"feat.3.a":{"en":"Your first log of an exercise is your starting point, not a record. Records count per exercise and per machine."},"feat.3.b":{"en":"172 achievements and 100 levels. Points come from keeping your plan, never from extra volume."},"feat.3.c":{"en":"Sleep, body weight and waist trends next to your training. Export everything to CSV, JSON or PDF, free."},"feat.1.alt":{"en":"Program screen: the active program with its training days, muscles per day and how long each day takes"},"feat.2.alt":{"en":"Set logging screen for the bench press: last session, today's suggested load and reps, and the Save set button"},"feat.3.alt":{"en":"Personal Records screen: the latest records per exercise"},"watch.dot":{"en":"Show watch screen {n}"},"dose.unit":{"en":"sets / week"},"dose.y":{"en":"Detectable steps of growth"},"dose.few":{"en":"few studies"},"dose.t0.name":{"en":"Below the minimum"},"dose.t0.text":{"en":"Detectable growth started at about 4 weekly sets."},"dose.t1.name":{"en":"Minimum effective dose"},"dose.t1.text":{"en":"Enough for detectable growth."},"dose.t2.name":{"en":"Higher efficiency"},"dose.t3.name":{"en":"Intermediate efficiency"},"dose.t4.name":{"en":"Lower efficiency"},"dose.t5.name":{"en":"Lowest efficiency"},"dose.cost":{"en":"In this range, one more detectable step of growth took about <b>{n}</b> extra weekly sets."},"dose.t6.name":{"en":"Unclear"},"dose.t6.text":{"en":"Too few studies to say. Growth may even be lower."},"st.p10":{"en":"Powerlifter level"},"st.p50":{"en":"Powerlifter median"},"st.p90":{"en":"Top 10% of powerlifters"},"st.p10s":{"en":"10th"},"st.p50s":{"en":"median"},"st.p90s":{"en":"90th"},"st.below":{"en":"Below the first mark. These marks come from competitors, a small and very strong group. Next mark: <b>{next}</b>, <b>{kg} kg</b> more on your estimated max."},"st.at":{"en":"Reached: <b>{level}</b>. Next mark: <b>{next}</b>, <b>{kg} kg</b> more on your estimated max."},"st.top":{"en":"Reached: <b>{level}</b>, the highest mark here."},"st.invalid":{"en":"Enter a body weight, a weight on the bar and 1 to 10 reps."},"img.program":{"en":"shots/en/program.webp"},"img.logging":{"en":"shots/en/logging.webp"},"img.records":{"en":"shots/en/records.webp"},"img.watch1":{"en":"shots/en/watch1.webp"},"img.watch2":{"en":"shots/en/watch2.webp"},"img.watch3":{"en":"shots/en/watch3.webp"},"img.watch4":{"en":"shots/en/watch4.webp"}}};</script>
+<script src="v2.js" defer></script>
 </body>
 </html>

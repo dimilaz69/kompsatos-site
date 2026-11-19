@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="el">
+<html lang="el" data-os="desktop">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kompsatos — εφαρμογή προπόνησης βασισμένη στην έρευνα, για iPhone και Android</title>
-  <meta name="description" content="Το Kompsatos είναι εφαρμογή προπόνησης που έφτιαξε ένας φυσικοθεραπευτής που γυμνάζεται. Προγράμματα, πρόοδος, ρεκόρ, αποκατάσταση και οδηγίες διατροφής βασισμένες σε δημοσιευμένη έρευνα. Μπες στη beta σε iPhone ή Android.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Kompsatos — εφαρμογή προπόνησης βασισμένη στην έρευνα</title>
+  <meta name="description" content="Το Kompsatos είναι εφαρμογή προπόνησης από φυσικοθεραπευτή που γυμνάζεται. Προγράμματα, προτάσεις φορτίου, ρεκόρ και εφαρμογή για Apple Watch, κάθε κανόνας με την πηγή του. Δωρεάν σε iPhone και Android.">
   <link rel="canonical" href="https://www.kompsatos.com/el/">
   <link rel="alternate" hreflang="en" href="https://www.kompsatos.com/">
   <link rel="alternate" hreflang="el" href="https://www.kompsatos.com/el/">
@@ -13,333 +13,369 @@
   <meta property="og:site_name" content="Kompsatos">
   <meta property="og:locale" content="el_GR">
   <meta property="og:locale:alternate" content="en_US">
-  <meta property="og:title" content="Kompsatos — εφαρμογή προπόνησης βασισμένη στην έρευνα, για iPhone και Android">
-  <meta property="og:description" content="Εφαρμογή προπόνησης από έναν φυσικοθεραπευτή που γυμνάζεται. Κάθε κανόνας μέσα της έχει την πηγή του. Μπες στη beta σε iPhone ή Android.">
+  <meta property="og:title" content="Kompsatos — εφαρμογή προπόνησης βασισμένη στην έρευνα">
+  <meta property="og:description" content="Το Kompsatos είναι εφαρμογή προπόνησης από φυσικοθεραπευτή που γυμνάζεται. Προγράμματα, προτάσεις φορτίου, ρεκόρ και εφαρμογή για Apple Watch, κάθε κανόνας με την πηγή του. Δωρεάν σε iPhone και Android.">
   <meta property="og:url" content="https://www.kompsatos.com/el/">
-  <meta property="og:image" content="https://www.kompsatos.com/og.png">
+  <meta property="og:image" content="https://www.kompsatos.com/og-el.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Kompsatos: προπονήσου με βάση την έρευνα. Εφαρμογή προπόνησης για iPhone και Android από φυσικοθεραπευτή.">
+  <meta property="og:image:alt" content="Προπονήσου με βάση την έρευνα. Kompsatos.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Kompsatos — εφαρμογή προπόνησης βασισμένη στην έρευνα, για iPhone και Android">
-  <meta name="twitter:description" content="Εφαρμογή προπόνησης από έναν φυσικοθεραπευτή που γυμνάζεται. Κάθε κανόνας μέσα της έχει την πηγή του. Μπες στη beta σε iPhone ή Android.">
-  <meta name="twitter:image" content="https://www.kompsatos.com/og.png">
+  <meta name="twitter:title" content="Kompsatos — εφαρμογή προπόνησης βασισμένη στην έρευνα">
+  <meta name="twitter:description" content="Το Kompsatos είναι εφαρμογή προπόνησης από φυσικοθεραπευτή που γυμνάζεται. Προγράμματα, προτάσεις φορτίου, ρεκόρ και εφαρμογή για Apple Watch, κάθε κανόνας με την πηγή του. Δωρεάν σε iPhone και Android.">
+  <meta name="twitter:image" content="https://www.kompsatos.com/og-el.png">
   <meta name="theme-color" content="#101214">
   <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="preload" href="../fonts/sofia-sans-condensed-greek.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/sofia-sans-condensed-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../v2.css">
   <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://www.kompsatos.com/#org",
-        "name": "Kompsatos",
-        "alternateName": ["KOMPSATOS", "Kompsatos app"],
-        "url": "https://www.kompsatos.com/",
-        "logo": "https://www.kompsatos.com/apple-touch-icon.png",
-        "email": "hello@kompsatos.com",
-        "founder": { "@type": "Person", "name": "Dimitris Lazaridis", "jobTitle": "Physiotherapist" },
-        "sameAs": [
-          "https://www.instagram.com/kompsatosapp",
-          "https://www.tiktok.com/@kompsatos",
-          "https://www.youtube.com/@kompsatosapp"
-        ]
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "Kompsatos",
-        "alternateName": "Kompsatos app",
-        "url": "https://www.kompsatos.com/el/",
-        "applicationCategory": "HealthApplication",
-        "operatingSystem": "iOS, Android",
-        "description": "Εφαρμογή προπόνησης από έναν φυσικοθεραπευτή που γυμνάζεται. Προγράμματα, κανόνες προόδου, ρεκόρ, αποκατάσταση και οδηγίες διατροφής βασισμένες σε δημοσιευμένη έρευνα.",
-        "inLanguage": ["el", "en"],
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-        "author": { "@id": "https://www.kompsatos.com/#org" }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          { "@type": "Question", "name": "Είναι δωρεάν το Kompsatos;", "acceptedAnswer": { "@type": "Answer", "text": "Ναι. Ο προπονητής είναι δωρεάν, πάντα: καταγραφή, προγράμματα, προτάσεις φορτίου, ρεκόρ, οδηγίες, εξαγωγή των δεδομένων σου και το χρονόμετρο διαλείμματος στην οθόνη κλειδώματος. Σχεδιάζεται μια πληρωμένη έκδοση Pro για επιπλέον λειτουργίες, όπως το πλήρες ιστορικό γραφημάτων και το Apple Watch." } },
-          { "@type": "Question", "name": "Πότε παίρνω πρόσβαση στη beta;", "acceptedAnswer": { "@type": "Answer", "text": "Αμέσως. Σε iPhone, άνοιξε τον σύνδεσμο της beta, εγκατάστησε την εφαρμογή TestFlight της Apple αν σου τη ζητήσει και πάτα Install. Σε Android, γράψου στην ομάδα δοκιμαστών με τον λογαριασμό Google του κινητού σου, μετά άνοιξε τον σύνδεσμο δοκιμής, πάτα «Γίνετε δοκιμαστής» και εγκατάστησε το Kompsatos από το Google Play. Οι θέσεις στο iPhone είναι περιορισμένες· αν η beta είναι γεμάτη, γράψου στη λίστα αναμονής και θα σε ειδοποιήσουμε όταν ανοίξουν θέσεις." } },
-          { "@type": "Question", "name": "Υπάρχει έκδοση για Android;", "acceptedAnswer": { "@type": "Answer", "text": "Ναι, σε beta. Γράψου στην ομάδα δοκιμαστών με τον λογαριασμό Google του κινητού σου, μετά άνοιξε τον σύνδεσμο δοκιμής και πάτα «Γίνετε δοκιμαστής»· η εφαρμογή εγκαθίσταται από το Google Play όπως κάθε άλλη. Η Google ανοίγει μια εφαρμογή σε όλους αφού τη χρησιμοποιήσει μια ομάδα δοκιμαστών για 14 ημέρες, οπότε κάθε δοκιμαστής σε Android φέρνει πιο κοντά τη δημόσια κυκλοφορία." } },
-          { "@type": "Question", "name": "Χρειάζομαι λογαριασμό και πού πάνε τα δεδομένα μου;", "acceptedAnswer": { "@type": "Answer", "text": "Δεν χρειάζεσαι λογαριασμό. Ως επισκέπτης όλα μένουν στο κινητό σου. Με λογαριασμό, και μόνο με τη ρητή συγκατάθεσή σου, οι προπονήσεις και οι ρυθμίσεις σου αποθηκεύονται σε βάση δεδομένων στη Φρανκφούρτη της Γερμανίας, για να τις επαναφέρεις σε άλλο κινητό. Χωρίς διαφημίσεις, χωρίς analytics, και τα δεδομένα σου δεν πωλούνται ποτέ." } },
-          { "@type": "Question", "name": "Είναι ιατρική συμβουλή;", "acceptedAnswer": { "@type": "Answer", "text": "Όχι. Το Kompsatos δίνει πληροφορίες προπόνησης βασισμένες σε δημοσιευμένη έρευνα. Αν έχεις πόνο, τραυματισμό ή κάποια πάθηση, μίλα με έναν κατάλληλο επαγγελματία υγείας." } }
-        ]
-      }
-    ]
+   "@type": "Organization",
+   "@id": "https://www.kompsatos.com/#org",
+   "name": "Kompsatos",
+   "alternateName": [
+    "KOMPSATOS",
+    "Kompsatos app"
+   ],
+   "url": "https://www.kompsatos.com/",
+   "logo": "https://www.kompsatos.com/apple-touch-icon.png",
+   "email": "hello@kompsatos.com",
+   "founder": {
+    "@type": "Person",
+    "name": "Dimitris Lazaridis",
+    "jobTitle": "Physiotherapist"
+   },
+   "sameAs": [
+    "https://www.instagram.com/kompsatosapp",
+    "https://www.tiktok.com/@kompsatos",
+    "https://www.youtube.com/@kompsatosapp"
+   ]
+  },
+  {
+   "@type": "SoftwareApplication",
+   "name": "Kompsatos",
+   "alternateName": "Kompsatos app",
+   "url": "https://www.kompsatos.com/el/",
+   "applicationCategory": "HealthApplication",
+   "operatingSystem": "iOS, Android, watchOS",
+   "description": "Το Kompsatos είναι εφαρμογή προπόνησης από φυσικοθεραπευτή που γυμνάζεται. Προγράμματα, προτάσεις φορτίου, ρεκόρ και εφαρμογή για Apple Watch, κάθε κανόνας με την πηγή του. Δωρεάν σε iPhone και Android.",
+   "inLanguage": [
+    "en",
+    "el"
+   ],
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+   },
+   "author": {
+    "@id": "https://www.kompsatos.com/#org"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Είναι δωρεάν το Kompsatos;",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ναι. Ο προπονητής είναι δωρεάν, πάντα: καταγραφή, προγράμματα, προτάσεις φορτίου, ρεκόρ, οδηγίες, εξαγωγή των δεδομένων σου και το χρονόμετρο διαλείμματος στην οθόνη κλειδώματος. Σχεδιάζεται μια πληρωμένη έκδοση Pro για επιπλέον λειτουργίες, όπως το πλήρες ιστορικό γραφημάτων (το δωρεάν δείχνει 3 μήνες), το Apple Watch, τα widgets και τα θέματα, με σχεδιαζόμενη τιμή 3,99 € τον μήνα ή 29,99 € τον χρόνο. Οι τιμές μπορεί να αλλάξουν πριν την κυκλοφορία."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Πότε παίρνω πρόσβαση στη beta;",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Αμέσως. Σε iPhone, άνοιξε τον σύνδεσμο της beta, εγκατάστησε την εφαρμογή TestFlight της Apple αν σου τη ζητήσει και πάτα Install. Σε Android θέλει δύο βήματα, στη σελίδα για Android. Οι θέσεις στο iPhone είναι περιορισμένες· αν η beta είναι γεμάτη, γράψου στη λίστα αναμονής και θα σε ειδοποιήσουμε όταν ανοίξουν θέσεις."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Χρειάζομαι λογαριασμό και πού πάνε τα δεδομένα μου;",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Δεν χρειάζεσαι λογαριασμό. Ως επισκέπτης όλα μένουν στο κινητό σου. Με λογαριασμό, και μόνο με τη ρητή συγκατάθεσή σου, οι προπονήσεις και οι ρυθμίσεις σου αποθηκεύονται σε βάση δεδομένων στη Φρανκφούρτη της Γερμανίας, για να τις επαναφέρεις σε άλλο κινητό. Χωρίς διαφημίσεις, χωρίς analytics, και τα δεδομένα σου δεν πωλούνται ποτέ. Λεπτομέρειες στην πολιτική απορρήτου."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Δουλεύει χωρίς Apple Watch;",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ναι. Όλα δουλεύουν μόνο με το κινητό, σε iPhone και σε Android. Το ρολόι είναι επιπλέον, για καταγραφή από τον καρπό."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Είναι ιατρική συμβουλή;",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Όχι. Το Kompsatos δίνει πληροφορίες προπόνησης βασισμένες σε δημοσιευμένη έρευνα. Αν έχεις πόνο, τραυματισμό ή κάποια πάθηση, μίλα με έναν κατάλληλο επαγγελματία υγείας."
+     }
+    }
+   ]
   }
+ ]
+}
   </script>
 </head>
 <body>
 
-<a class="skip" href="#main">Μετάβαση στο περιεχόμενο</a>
+<a class="skip" href="#main" data-i18n="skip">Μετάβαση στο περιεχόμενο</a>
 
 <header class="site">
   <div class="wrap">
-    <a class="wordmark" href="/el/">KOMPSATOS</a>
-    <nav aria-label="Ενότητες">
-      <a href="#features">Λειτουργίες</a>
-      <a href="#evidence">Έρευνα</a>
-      <a href="#roadmap">Πλάνο</a>
-      <a href="#pricing">Τιμές</a>
-      <a href="#faq">Ερωτήσεις</a>
-      <a class="lang" href="/" hreflang="en" lang="en">English</a>
-      <a class="cta-small" href="#beta">Μπες στη beta</a>
+    <a class="brand" href="#top" aria-label="Kompsatos">
+      <svg viewBox="0 0 100 100" aria-hidden="true"><rect x="2" y="46.5" width="96" height="7" rx="3.5" fill="#E9E7E2"/><rect x="9" y="29" width="11" height="42" rx="4.5" fill="#E9E7E2"/><rect x="21" y="20" width="11" height="60" rx="4.5" fill="#E9E7E2"/><rect x="56" y="20" width="11" height="60" rx="4.5" fill="#E9E7E2"/><rect x="68" y="26" width="11" height="48" rx="4.5" fill="#E9E7E2"/><rect x="80" y="32" width="11" height="36" rx="4.5" fill="#32DBB8"/></svg>
+      KOMPSATOS
+    </a>
+    <nav aria-label="Sections">
+      <a href="#features" data-i18n="nav.features">Η εφαρμογή</a>
+      <a href="#watch" data-i18n="nav.watch">Ρολόι</a>
+      <a href="#evidence" data-i18n="nav.evidence">Έρευνα</a>
+      <a href="#faq" data-i18n="nav.faq">Ερωτήσεις</a>
+      <a class="lang" id="langBtn" href="../" hreflang="en" lang="en">English</a>
+      <a class="get" href="#get" data-i18n="nav.get">Κατέβασέ το</a>
     </nav>
   </div>
 </header>
 
 <main id="main">
-  <div class="wrap">
+  <div id="viewHome">
+  <div class="wrap" id="top">
     <div class="hero">
       <div>
-        <div class="eyebrow">Beta για iPhone &amp; Android · δωρεάν</div>
-        <h1>Προπονήσου με βάση την έρευνα.</h1>
-        <p class="lead">Το Kompsatos είναι εφαρμογή προπόνησης που έφτιαξε ένας φυσικοθεραπευτής που γυμνάζεται. Τα προγράμματα, οι κανόνες προόδου, οι σημειώσεις και οι στόχοι της στηρίζονται σε δημοσιευμένη έρευνα, όχι σε μόδες.</p>
+        <div class="eyebrow" data-i18n="hero.eyebrow">Δωρεάν · beta για iPhone &amp; Android</div>
+        <h1 data-i18n="hero.h1">Προπονήσου με βάση την <em>έρευνα.</em></h1>
+        <p class="sub" data-i18n="hero.sub">Η εφαρμογή προπόνησης που έφτιαξε ένας φυσικοθεραπευτής που γυμνάζεται. Κάθε κανόνας της έχει την πηγή του.</p>
         <div class="cta-row">
-          <a class="btn" href="https://testflight.apple.com/join/EJnFbWZ6">Beta για iPhone</a>
-          <a class="btn ghost" href="#android">Beta για Android</a>
+          <a class="btn ios" href="https://testflight.apple.com/join/EJnFbWZ6" data-i18n="cta.ios">Beta για iPhone</a>
+          <a class="btn ghost android" href="/android/" data-i18n="cta.android">Beta για Android</a>
         </div>
-        <p class="fine">Δωρεάν. Σε iPhone μέσω του TestFlight της Apple: άνοιξε τον σύνδεσμο στο iPhone σου. Σε Android μέσω του Google Play, σε <a href="#android">δύο βήματα</a>.</p>
+        <p class="fine top" data-i18n="hero.fine">Δωρεάν, χωρίς διαφημίσεις. Σε iPhone μέσω TestFlight της Apple, σε Android μέσω Google Play.</p>
       </div>
-      <div class="phone"><img src="/el/career.jpg" alt="Η οθόνη Αθλητική πορεία του Kompsatos: επίπεδο 15, 13200 XP, 31 από 172 επιτεύγματα, ο τίτλος Μαθητεία και το χρώμα έμφασης Αιγαίο" width="640" height="1282" fetchpriority="high" decoding="async"></div>
+      <div>
+        <div class="stage">
+          <div class="demo" id="demo" role="img" data-i18n-attr="aria-label:demo.aria" aria-label="Κινούμενη επίδειξη: ένα σετ αποθηκεύεται στο κινητό, το χρονόμετρο διαλείμματος τρέχει στο κινητό και στο ρολόι, και το επόμενο σετ είναι έτοιμο.">
+            <div class="phone" aria-hidden="true">
+              <div class="island"><svg viewBox="0 0 36 36"><circle class="ring-bg" cx="18" cy="18" r="14" fill="none" stroke-width="5"/><circle class="ring-fg" data-ring cx="18" cy="18" r="14" fill="none" stroke-width="5" stroke-linecap="round" transform="rotate(-90 18 18)"/></svg><b data-clock>1:30</b></div>
+              <div class="scr">
+                <div class="p-top"><span>‹</span><b data-i18n="demo.exercise">Πιέσεις πάγκου</b><span>⇄</span></div>
+                <div class="p-target" data-i18n="demo.target">Στόχος: 3 × 6–10 | Διάλειμμα: 1:30</div>
+                <div class="p-rest"><div><div class="in"><svg viewBox="0 0 36 36"><circle class="ring-bg" cx="18" cy="18" r="14" fill="none" stroke-width="5"/><circle class="ring-fg" data-ring cx="18" cy="18" r="14" fill="none" stroke-width="5" stroke-linecap="round" transform="rotate(-90 18 18)"/></svg><div><small data-i18n="demo.rest">Διάλειμμα</small><b data-clock>1:30</b></div></div></div></div>
+                <div class="p-card">
+                  <div class="p-lab" data-i18n="demo.today">Σήμερα</div>
+                  <div class="p-big"><b>80 kg</b><span>9 <span data-i18n="demo.reps">επαναλήψεις</span></span></div>
+                  <p class="p-note" data-i18n="demo.note">Η απόδοση βελτιώνεται. Κράτα σταθερό το φορτίο και χτίσε επαναλήψεις πριν προσθέσεις βάρος.</p>
+                </div>
+                <div class="p-step"><span class="pm">–</span><div class="fld"><small data-i18n="demo.weight">Βάρος (kg)</small><b>80</b></div><span class="pm">+</span></div>
+                <div class="p-step"><span class="pm">–</span><div class="fld"><small data-i18n="demo.repsLabel">Επαναλήψεις</small><b id="dReps">9</b></div><span class="pm" id="dPlus">+</span></div>
+                <div class="p-foot"><small id="dLast"></small><div class="p-save" id="dSave"></div></div>
+                <div class="saved-flash" id="dFlash"></div>
+              </div>
+            </div>
+            <div class="watch" id="dWatch" aria-hidden="true">
+              <div class="w-time">8:22</div>
+              <div class="w-set">
+                <div class="w-name" data-i18n="demo.exercise">Πιέσεις πάγκου</div>
+                <div class="w-row"><span id="wSet"></span><span class="hr">♥ <span data-hr>132</span></span></div>
+                <div class="w-row"><span data-i18n="demo.wLast">Προηγ.: 80 kg × 8</span></div>
+                <div class="w-vals"><div>80<small>kg</small></div><div class="sel"><span id="wReps">9</span><small data-i18n="demo.wReps">επαν.</small></div><div>2<small>RIR</small></div></div>
+                <div class="w-log" data-i18n="demo.wLog">Καταγραφή σετ</div>
+              </div>
+              <div class="w-rest">
+                <svg viewBox="0 0 36 36"><circle class="ring-bg" cx="18" cy="18" r="14" fill="none" stroke-width="4.5"/><circle class="ring-fg" data-ring cx="18" cy="18" r="14" fill="none" stroke-width="4.5" stroke-linecap="round" transform="rotate(-90 18 18)"/></svg>
+                <small data-i18n="demo.rest">Διάλειμμα</small>
+                <b data-clock>1:30</b>
+                <span class="hr">♥ <span data-hr>132</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="demo-cap" data-i18n="demo.caption">Ένα σετ, το διάλειμμα, το επόμενο σετ. Πάτα «Αποθήκευση σετ» να το δοκιμάσεις.</p>
+        <p class="fine under" style="text-align:center" data-i18n="hero.fine">Δωρεάν, χωρίς διαφημίσεις. Σε iPhone μέσω TestFlight της Apple, σε Android μέσω Google Play.</p>
+      </div>
     </div>
+  </div>
+
+  <div class="band">
+    <div class="wrap">
+      <ul class="trust">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="trust.1">Από φυσικοθεραπευτή</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="trust.2">Κάθε κανόνας με την πηγή του</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="trust.3">Δωρεάν. Χωρίς διαφημίσεις, χωρίς παρακολούθηση</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="band pillar">
+    <div class="wrap"><p data-i18n="pillar.text">Η προπόνηση είναι ένα μεγάλο ταξίδι. Θέλει οργάνωση, αφοσίωση και επιμονή: στο πλάνο, στη διατροφή, στον ύπνο. <strong>Δεν συγκρίνεσαι με κανέναν. Μόνο με τον χθεσινό σου εαυτό.</strong></p></div>
   </div>
 
   <section id="features">
     <div class="wrap">
-      <div class="eyebrow">Τι κάνει</div>
-      <h2>Ένας προπονητής που διαβάζει την προπόνησή σου, όχι τη διάθεσή σου.</h2>
-      <div class="grid">
-        <div class="card">
-          <span class="tag">Προπόνηση</span>
-          <h3>Προγράμματα φτιαγμένα από την έρευνα</h3>
-          <p>Το πρόγραμμά σου βάζει εβδομαδιαία σετ ανά μυ μέσα στα δημοσιευμένα εύρη, ξεκινά από τις βαριές ασκήσεις και κρατά μια προπόνηση έως 24 σετ εργασίας όταν προπονείσαι τέσσερις ή περισσότερες μέρες την εβδομάδα. Κάθε μέρα δείχνει πόσο πραγματικά διαρκεί, μαζί με τα σετ ζεστάματος. Το επόμενο φορτίο σου βγαίνει από τις δικές σου πρόσφατες προπονήσεις (στα μηχανήματα και στις τροχαλίες, στο ίδιο μηχάνημα), και μια εβδομαδιαία ανασκόπηση συνοψίζει τι έκανες.</p>
-        </div>
-        <div class="card">
-          <span class="tag">Ρεκόρ</span>
-          <h3>Ρεκόρ που είναι αληθινά</h3>
-          <p>Η πρώτη καταγραφή μιας άσκησης είναι το σημείο εκκίνησής σου, όχι ρεκόρ. Τα ρεκόρ μετράνε ανά άσκηση και ανά μηχάνημα, και ένα άλμα μεγαλύτερο από όσο εξηγεί η προπόνηση (πάνω από 1,5× το βαρύτερο φορτίο σου) ξεκινά νέα βάση αντί για ψεύτικο ρεκόρ. Ένα σήμα ανά σετ.</p>
-        </div>
-        <div class="card">
-          <span class="tag">Στο γυμναστήριο</span>
-          <h3>Φτιαγμένο για την ώρα της προπόνησης</h3>
-          <p>Το χρονόμετρο διαλείμματος τρέχει στην οθόνη κλειδώματος και στο Dynamic Island στο iPhone, και σε ειδοποίηση στο Android. Υπολογιστής δίσκων και σετ ζεστάματος για τις βασικές σου ασκήσεις, σημειώσεις σε κάθε σετ, αναίρεση όταν πατήσεις λάθος, και υπενθυμίσεις μόνο τις μέρες προπόνησης.</p>
-        </div>
-        <div class="card">
-          <span class="tag">Αποκατάσταση &amp; διατροφή</span>
-          <h3>Η υπόλοιπη εβδομάδα σου, μαζί με την προπόνηση</h3>
-          <p>Ύπνος, σωματικό βάρος και περίμετρος μέσης δίπλα στην προπόνησή σου, με οδηγίες για πρωτεΐνη και ρυθμό απώλειας βάρους από μετα-αναλύσεις. Στο iPhone, το βάρος και ο ύπνος μπορούν να έρχονται κατευθείαν από το Apple Health, και οι προπονήσεις που τελειώνεις να αποθηκεύονται εκεί, αν το ενεργοποιήσεις.</p>
-        </div>
-        <div class="card">
-          <span class="tag">Πρόοδος</span>
-          <h3>Ανταμοιβή για τη συνέπεια, όχι για την υπερβολή</h3>
-          <p>172 επιτεύγματα, 100 επίπεδα, τίτλοι και χρώματα που ξεκλειδώνεις. Οι πόντοι έρχονται από το να τηρείς το πρόγραμμά σου, ποτέ από επιπλέον όγκο. Γραφήματα για τις ασκήσεις και το σώμα σου, με ένα περίγραμμα σώματος από τις δικές σου μετρήσεις.</p>
-        </div>
-        <div class="card">
-          <span class="tag">Τα δεδομένα σου</span>
-          <h3>Δικά σου, στο κινητό σου</h3>
-          <p>Χωρίς υποχρεωτικό λογαριασμό. Με λογαριασμό και με τη συγκατάθεσή σου, το αντίγραφο ασφαλείας στο cloud μεταφέρει σε νέο κινητό τις προπονήσεις, τα προγράμματα, τις αλλαγές στο ημερολόγιο και τις ρυθμίσεις σου. Εξαγωγή όλων σε CSV, JSON ή PDF για τον προπονητή ή τον φυσικοθεραπευτή σου, δωρεάν.</p>
-        </div>
+      <div class="eyebrow" data-i18n="feat.eyebrow">Τι κάνει</div>
+      <h2 data-i18n="feat.h2">Ένας προπονητής που διαβάζει την προπόνησή σου, όχι τη διάθεσή σου.</h2>
+      <div class="tabs" role="tablist" id="tabs">
+        <button type="button" role="tab" id="tab1" aria-controls="panel" aria-selected="true" data-i18n="feat.tab1">Το πλάνο σου</button>
+        <button type="button" role="tab" id="tab2" aria-controls="panel" aria-selected="false" tabindex="-1" data-i18n="feat.tab2">Στο γυμναστήριο</button>
+        <button type="button" role="tab" id="tab3" aria-controls="panel" aria-selected="false" tabindex="-1" data-i18n="feat.tab3">Η πρόοδός σου</button>
       </div>
-
-      <div class="shots">
-        <figure><div class="phone"><img src="/el/records.jpg" alt="Η οθόνη Ατομικά ρεκόρ: τα πιο πρόσφατα ρεκόρ ανά άσκηση, με ρεκόρ όγκου και επαναλήψεων σε ρουμανική άρση θανάτου, καθίσματα, κωπηλατική και πιέσεις πάγκου" width="640" height="1282" loading="lazy" decoding="async"></div><figcaption>Ρεκόρ ανά άσκηση και ανά μηχάνημα</figcaption></figure>
-        <figure><div class="phone"><img src="/el/achievements.jpg" alt="Η οθόνη Επιτεύγματα: επίπεδο 15, 31 από 172 ξεκλειδωμένα, πρόσφατα τα 50 προπονήσεις και 250 τόνοι, και 480 από 500 κύρια σετ για το επόμενο" width="640" height="1282" loading="lazy" decoding="async"></div><figcaption>Επιτεύγματα που μετράνε πραγματική πρόοδο</figcaption></figure>
-        <figure><div class="phone"><img src="/el/accents.jpg" alt="Επιλογή χρώματος έμφασης με επιλεγμένο το Αιγαίο· ο Σίδηρος ξεκλειδώνει στο επίπεδο 20 και η Κιμωλία στο 30" width="640" height="1282" loading="lazy" decoding="async"></div><figcaption>Χρώματα που ξεκλειδώνουν καθώς ανεβαίνεις επίπεδο</figcaption></figure>
+      <div class="panel" id="panel" role="tabpanel" aria-labelledby="tab1">
+        <div><div class="shot"><img id="fImg" width="720" height="1565" decoding="async" loading="lazy" data-i18n-attr="src:img.program;alt:feat.1.alt" src="../shots/el/program.webp" alt="Οθόνη προγράμματος: το ενεργό πρόγραμμα με τις μέρες προπόνησης, τους μύες κάθε μέρας και τη διάρκειά της"></div><div class="fdots" aria-hidden="true"><i class="on"></i><i></i><i></i></div></div>
+        <div class="copy">
+          <h3 id="fH" data-i18n="feat.1.h">Πρόγραμμα φτιαγμένο από την έρευνα</h3>
+          <ul>
+            <li id="fA" data-i18n="feat.1.a">Εβδομαδιαία σετ ανά μυ μέσα στα δημοσιευμένα εύρη, και λιγότερα όταν ξεκινάς.</li>
+            <li id="fB" data-i18n="feat.1.b">Οι βαριές ασκήσεις ανοίγουν τη μέρα. Μια προπόνηση μένει έως 24 σετ εργασίας όταν προπονείσαι τέσσερις ή περισσότερες μέρες την εβδομάδα.</li>
+            <li id="fC" data-i18n="feat.1.c">Κάθε μέρα δείχνει πόσο πραγματικά διαρκεί, μαζί με τα σετ ζεστάματος.</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="evidence" class="evidence">
+  <section id="watch">
+    <div class="wrap watchsec">
+      <div>
+        <div class="wframe"><div class="clip">
+          <img class="on" width="422" height="514" loading="lazy" decoding="async" data-i18n-attr="src:img.watch1;alt:watch.alt1" src="../shots/el/watch1.webp" alt="Οθόνη ρολογιού: πιέσεις πάγκου με αλτήρες, σετ 2 από 4, παλμοί 138, 27,5 kg, 10 επαναλήψεις, κουμπί Καταγραφή σετ">
+          <img width="422" height="514" loading="lazy" decoding="async" data-i18n-attr="src:img.watch2;alt:watch.alt2" src="../shots/el/watch2.webp" alt="Οθόνη ρολογιού: κύκλος διαλείμματος με 1:13 να απομένει">
+          <img width="422" height="514" loading="lazy" decoding="async" data-i18n-attr="src:img.watch3;alt:watch.alt3" src="../shots/el/watch3.webp" alt="Οθόνη ρολογιού: διάδρομος με κλίση, 7:52 από στόχο 20:00, παλμοί 138 στη ζώνη 135–140">
+          <img width="422" height="514" loading="lazy" decoding="async" data-i18n-attr="src:img.watch4;alt:watch.alt4" src="../shots/el/watch4.webp" alt="Οθόνη ρολογιού: αποθήκευσε την προπόνηση στο iPhone· το ρολόι καταγράφει μέχρι τότε">
+        </div></div>
+        <div class="wdots" id="wdots"></div>
+      </div>
+      <div>
+        <div class="eyebrow" data-i18n="watch.eyebrow">Apple Watch</div>
+        <h2 data-i18n="watch.h2">Άσε το κινητό στην τσάντα.</h2>
+        <p class="lead" data-i18n="watch.lead">Κατάγραψε το σετ από τον καρπό σου. Το ρολόι σε ειδοποιεί όταν τελειώσει το διάλειμμα.</p>
+        <ul class="wlist" id="wlist">
+          <li class="on" data-i18n="watch.1"><strong>Σετ.</strong> Τα κιλά και οι επαναλήψεις έρχονται συμπληρωμένα από την προηγούμενη φορά. Γύρνα το Crown, πάτα Καταγραφή σετ.</li>
+          <li data-i18n="watch.2"><strong>Διάλειμμα.</strong> Ο κύκλος μετράει αντίστροφα και ο καρπός σου δονείται στο μηδέν.</li>
+          <li data-i18n="watch.3"><strong>Cardio.</strong> Ο χρόνος απέναντι στον στόχο σου, και οι παλμοί απέναντι στη ζώνη τους.</li>
+          <li data-i18n="watch.4"><strong>Τέλος.</strong> Το ρολόι συνεχίζει να καταγράφει μέχρι να αποθηκεύσεις την προπόνηση στο iPhone.</li>
+        </ul>
+        <p class="fine" style="margin:16px 0 0" data-i18n="watch.fine">Το κινητό μακριά; Τα σετ κρατιούνται στο ρολόι και παραδίδονται όταν ξαναβρεθεί κοντά. Το Apple Watch είναι δωρεάν μέχρι να έρθει το Pro.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="evidence">
     <div class="wrap">
-      <div class="eyebrow">Πρώτα η έρευνα</div>
-      <h2>Οι αριθμοί έρχονται με πηγές.</h2>
-      <p class="lead">Μερικοί από τους κανόνες της εφαρμογής, και από πού προέρχονται.</p>
-      <div class="grid">
-        <div class="card">
-          <div class="big">67 μελέτες</div>
-          <p>Περισσότερα εβδομαδιαία σετ φέρνουν περισσότερο μυ, με φθίνουσα απόδοση. Τα εβδομαδιαία σετ ανά μυ ορίζονται μέσα σε αυτή τη σχέση δόσης–απόκρισης, και είναι λιγότερα όταν ξεκινάς.</p>
-          <cite>Pelland JC et al. Sports Med 2026;56(2):481–505 (μετα-παλινδρόμηση, 2.058 συμμετέχοντες).</cite>
+      <div class="eyebrow" data-i18n="dose.eyebrow">Δοκίμασέ το</div>
+      <h2 data-i18n="dose.h2">Πόσα σετ την εβδομάδα;</h2>
+      <p class="lead" data-i18n="dose.lead">Περισσότερα εβδομαδιαία σετ χτίζουν περισσότερο μυ, αλλά κάθε βήμα κοστίζει περισσότερο από το προηγούμενο. Σύρε για να δεις τι βρήκαν 67 μελέτες.</p>
+      <div class="dose">
+        <div class="dose-grid">
+          <div>
+            <div class="dose-read">
+              <div class="num" id="doseNum">12</div>
+              <div class="unit" data-i18n="dose.unit">σετ / εβδομάδα</div>
+              <div class="dose-tier" aria-live="polite"><b class="name" id="doseName"></b><span id="doseText"></span></div>
+            </div>
+            <label for="doseRange" data-i18n="dose.label">Εβδομαδιαία σετ για έναν μυ</label>
+            <input type="range" id="doseRange" min="0" max="45" step="1" value="12">
+          </div>
+          <div>
+            <svg id="doseSvg" viewBox="0 0 640 310" role="img" aria-labelledby="doseName doseText"></svg>
+          </div>
         </div>
-        <div class="card">
-          <div class="big">≈ 11 σετ</div>
-          <p>Για έναν μυ σε μία προπόνηση, το όφελος σταμάτησε να ανεβαίνει γύρω σε αυτό το σημείο. Η εφαρμογή επιδιώκει να κρατά τα σετ ενός μυ σε μία προπόνηση κάτω από αυτό και μοιράζει τα υπόλοιπα της εβδομάδας στις άλλες μέρες του.</p>
-          <cite>Remmert JF et al. SportRxiv 2025, preprint (μετα-παλινδρόμηση του όγκου ανά προπόνηση).</cite>
+        <p class="dose-app" data-i18n="dose.app">Το Kompsatos ορίζει τα εβδομαδιαία σετ ανά μυ μέσα σε αυτή τη σχέση δόσης–απόκρισης, και λιγότερα όταν ξεκινάς.</p>
+        <details class="note"><summary data-i18n="note.sum">Πώς διαβάζονται αυτοί οι αριθμοί</summary><p class="fine" data-i18n="dose.note">Μέσοι όροι μελετών· κάθε άνθρωπος διαφέρει. Ένα σετ που γυμνάζει έμμεσα έναν μυ μετρά ως μισό. Ένα ανιχνεύσιμο βήμα είναι αύξηση 2,05% στο μέγεθος του μυός, η μικρότερη διαφορά που μπορούσε να ξεχωρίσει η ανάλυση. Η καμπύλη ενώνει τα όρια των βαθμίδων του Πίνακα 3. Λίγες μελέτες ξεπερνούν τα 25 σετ περίπου, άρα εκεί οι εκτιμήσεις είναι λιγότερο βέβαιες.</p></details>
+        <p class="fine dose-note"><cite><span data-i18n="dose.cite">Pelland JC και συν. Sports Med 2026;56(2):481–505. Μετα-παλινδρόμηση, 67 μελέτες, 2.058 συμμετέχοντες.</span> <a href="https://doi.org/10.1007/s40279-025-02344-w">doi:10.1007/s40279-025-02344-w</a></cite></p>
+      </div>
+
+      <p style="margin:26px 0 0"><a class="btn ghost" href="evidence.html" data-i18n="r.more">Όλες οι πηγές, και ένας έλεγχος δύναμης →</a></p>
+    </div>
+  </section>
+
+  <section id="journey">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="jr.eyebrow">Το μεγάλο ταξίδι</div>
+      <h2 data-i18n="jr.h2">Έναν δίσκο τη φορά.</h2>
+      <p class="lead" data-i18n="jr.lead">Τι κάνει η εφαρμογή για σένα στη διαδρομή.</p>
+      <div class="journey" id="jr" style="margin-top:22px">
+        <div class="bar-sticky" aria-hidden="true">
+          <svg viewBox="0 0 100 64"><rect x="2" y="28.5" width="96" height="7" rx="3.5" fill="#E9E7E2"/><rect class="pl on" x="9" y="11" width="11" height="42" rx="4.5" fill="#E9E7E2"/><rect class="pl on" x="21" y="2" width="11" height="60" rx="4.5" fill="#E9E7E2"/><rect class="pl on" x="56" y="2" width="11" height="60" rx="4.5" fill="#E9E7E2"/><rect class="pl on" x="68" y="8" width="11" height="48" rx="4.5" fill="#E9E7E2"/><rect class="pl on" x="80" y="14" width="11" height="36" rx="4.5" fill="#32DBB8"/></svg>
         </div>
-        <div class="card">
-          <div class="big">Πρώτα τα βαριά</div>
-          <p>Η δύναμη ανέβηκε περισσότερο στις ασκήσεις που γίνονταν πρώτες στην προπόνηση. Οι σύνθετες ασκήσεις ανοίγουν τη μέρα και οι μικρότεροι μύες έρχονται στο τέλος, έτσι μια μεγάλη μέρα κόβεται στα χέρια, όχι στο squat.</p>
-          <cite>Nunes JP et al. Eur J Sport Sci 2021;21(2):149–157 (μετα-ανάλυση).</cite>
-        </div>
-        <div class="card">
-          <div class="big">1,6–2,2 g/kg</div>
-          <p>Ημερήσια πρωτεΐνη πέρα από την οποία η επιπλέον πρωτεΐνη πρόσθεσε ελάχιστα στη μυϊκή ανάπτυξη ενηλίκων που κάνουν προπόνηση με αντιστάσεις.</p>
-          <cite>Morton RW et al. Br J Sports Med 2018;52:376–384 (μετα-ανάλυση, 49 μελέτες).</cite>
-        </div>
-        <div class="card">
-          <div class="big">0,5–1% / εβδομάδα</div>
-          <p>Ρυθμός απώλειας σωματικού βάρους που προτείνεται για να διατηρηθεί ο μυς σε φάση γράμμωσης.</p>
-          <cite>Helms ER, Aragon AA, Fitschen PJ. J Int Soc Sports Nutr 2014;11:20.</cite>
-        </div>
-        <div class="card">
-          <div class="big">809.986 καταγραφές</div>
-          <p>Ελεγμένα αποτελέσματα powerlifting πίσω από τα επίπεδα δύναμης που ξεκλειδώνεις σε squat, πάγκο και άρση θανάτου.</p>
-          <cite>van den Hoek DJ et al. J Sci Med Sport 2024;27(10):734–742.</cite>
-        </div>
-        <div class="card">
-          <div class="big">≤ 10 επαν.</div>
-          <p>Τα εκτιμώμενα μέγιστα θεωρούνται αξιόπιστα έως 10 επαναλήψεις μέχρι την αποτυχία. Τα μεγαλύτερα σετ μετράνε μόνο ως κατώτερο όριο, γιατί οι προβλέψεις χάνουν ακρίβεια όσο ανεβαίνουν οι επαναλήψεις.</p>
-          <cite>Reynolds JM, Gordon TJ, Robergs RA. J Strength Cond Res 2006;20(3):584–592.</cite>
-        </div>
+        <ol class="miles">
+          <li class="on"><span class="w" data-i18n="jr.1.w">Μέρα 1</span><span class="t" data-i18n="jr.1.t">Η πρώτη σου καταγραφή είναι το σημείο εκκίνησης, όχι ρεκόρ.</span></li>
+          <li class="on"><span class="w" data-i18n="jr.2.w">Κάθε προπόνηση</span><span class="t" data-i18n="jr.2.t">Το επόμενο φορτίο βγαίνει από όσα έκανες, όχι από ένα πρότυπο.</span></li>
+          <li class="on"><span class="w" data-i18n="jr.3.w">Κάθε εβδομάδα</span><span class="t" data-i18n="jr.3.t">Η εβδομαδιαία ανασκόπηση συνοψίζει τι έκανες σε σχέση με το πλάνο σου.</span></li>
+          <li class="on"><span class="w" data-i18n="jr.4.w">Μήνα με τον μήνα</span><span class="t" data-i18n="jr.4.t">Τα επίπεδα και οι τίτλοι έρχονται από το να τηρείς το πλάνο σου, ποτέ από το να κάνεις περισσότερα από όσα ζητά.</span></li>
+          <li class="on"><span class="w" data-i18n="jr.5.w">Έναν χρόνο μετά</span><span class="t" data-i18n="jr.5.t">Γραφήματα για τις ασκήσεις σου και ένα περίγραμμα σώματος από τις δικές σου μετρήσεις. Η μόνη σύγκριση είναι με εσένα.</span></li>
+        </ol>
       </div>
     </div>
   </section>
 
   <section id="founder">
     <div class="wrap">
-      <div>
-        <div class="eyebrow">Χτίζεται δημόσια</div>
-        <h2>Γεια, είμαι ο Δημήτρης.</h2>
-        <p class="byline">Δημήτρης Λαζαρίδης · Φυσικοθεραπευτής · Ηράκλειο, Κρήτη</p>
-        <p class="lead">Είμαι φυσικοθεραπευτής και γυμνάζομαι. Έφτιαξα το Kompsatos για να διορθώσω τα λάθη που κάναμε για χρόνια εγώ και οι αθλητές γύρω μου. Μοιράζομαι κάθε βήμα της κατασκευής, την έρευνα πίσω από κάθε απόφαση και τη δική μου προπόνηση με την εφαρμογή. Το όνομα προέρχεται από τον Κόμψατο, ποτάμι της Θράκης.</p>
-        <div class="socials">
-          <a href="https://www.instagram.com/kompsatosapp" target="_blank" rel="noopener">Instagram <span>@kompsatosapp</span></a>
-          <a href="https://www.tiktok.com/@kompsatos" target="_blank" rel="noopener">TikTok <span>@kompsatos</span></a>
-          <a href="https://www.youtube.com/@kompsatosapp" target="_blank" rel="noopener">YouTube <span>@kompsatosapp</span></a>
-        </div>
+      <div class="eyebrow" data-i18n="fo.eyebrow">Χτίζεται δημόσια</div>
+      <h2 data-i18n="fo.h2">Γεια, είμαι ο Δημήτρης.</h2>
+      <p class="byline" data-i18n="fo.by">Δημήτρης Λαζαρίδης · Φυσικοθεραπευτής · Ηράκλειο, Κρήτη</p>
+      <p class="lead" data-i18n="fo.p">Είμαι φυσικοθεραπευτής και γυμνάζομαι. Έφτιαξα το Kompsatos για να διορθώσω τα λάθη που κάναμε για χρόνια εγώ και οι αθλητές γύρω μου. Μοιράζομαι κάθε βήμα της κατασκευής, την έρευνα πίσω από κάθε απόφαση και τη δική μου προπόνηση με την εφαρμογή. Το όνομα προέρχεται από τον Κόμψατο, ποτάμι της Θράκης.</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/kompsatosapp" rel="noopener">Instagram <span>@kompsatosapp</span></a>
+        <a href="https://www.tiktok.com/@kompsatos" rel="noopener">TikTok <span>@kompsatos</span></a>
+        <a href="https://www.youtube.com/@kompsatosapp" rel="noopener">YouTube <span>@kompsatosapp</span></a>
       </div>
-    </div>
-  </section>
-
-  <section id="roadmap">
-    <div class="wrap">
-      <div class="eyebrow">Πλάνο</div>
-      <h2>Πού πηγαίνει.</h2>
-      <ul class="roadmap">
-        <li><span class="when">Τώρα</span><span>Ανοιχτή beta σε iPhone μέσω TestFlight και σε Android μέσω της δοκιμής του Google Play, με εβδομαδιαία ανασκόπηση της προπόνησής σου, Apple Health στο iPhone, και αντίγραφο ασφαλείας στο cloud που μεταφέρει τις προπονήσεις και τις ρυθμίσεις σου σε νέο κινητό.</span></li>
-        <li><span class="when">Μετά</span><span>Το Kompsatos στο Google Play για όλους, και κάρτες για να μοιράζεσαι την πρόοδό σου.</span></li>
-        <li><span class="when">Αργότερα</span><span>Πρωταθλήματα: εβδομαδιαίοι όμιλοι, κατατάξεις χώρας και παγκόσμιες. Ανοίγουν μόλις μπουν 100 αθλητές.</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="pricing">
-    <div class="wrap">
-      <div class="eyebrow">Τιμές</div>
-      <h2>Ο προπονητής είναι δωρεάν. Πάντα.</h2>
-      <p class="lead">Η καθοδήγηση στην προπόνηση δεν πρέπει να είναι ποτέ πίσω από συνδρομή. Το Pro προσθέτει βάθος και ευκολία από πάνω. Ποτέ διαφημίσεις, και τα δεδομένα σου δεν πωλούνται ποτέ.</p>
-      <div class="plans">
-        <div class="card plan">
-          <span class="tag">Δωρεάν · για πάντα</span>
-          <h3>Kompsatos</h3>
-          <div class="price">0 €</div>
-          <ul>
-            <li>Απεριόριστη καταγραφή, προγράμματα και προτάσεις φορτίου</li>
-            <li>Ρεκόρ και εκτιμώμενα μέγιστα ανά μηχάνημα</li>
-            <li>Συμβουλές προπόνησης, οδηγίες για ύπνο, σώμα και διατροφή</li>
-            <li>Όλα τα επιτεύγματα, τα επίπεδα, οι τίτλοι και τα χρώματα</li>
-            <li>Εβδομαδιαία ανασκόπηση, και πρωταθλήματα όταν ξεκινήσουν</li>
-            <li>Χρονόμετρο διαλείμματος στην οθόνη κλειδώματος και στο Dynamic Island</li>
-            <li>Εξαγωγή των δεδομένων σου σε CSV, JSON και PDF</li>
-            <li>Αντίγραφο ασφαλείας και επαναφορά</li>
-          </ul>
-        </div>
-        <div class="card plan">
-          <span class="tag">Pro · σχεδιάζεται</span>
-          <h3>Kompsatos Pro</h3>
-          <div class="price">3,99 €<small> / μήνα</small></div>
-          <div class="fine" style="margin-top:0">ή 29,99 € / χρόνο</div>
-          <ul>
-            <li>Πλήρες ιστορικό γραφημάτων (το δωρεάν δείχνει 3 μήνες)</li>
-            <li>Καταγραφή και χρονόμετρο διαλείμματος στο Apple Watch (δωρεάν μέχρι να έρθει το Pro)</li>
-            <li>Widgets αρχικής οθόνης</li>
-            <li>Εικονίδια και θέματα Pro</li>
-            <li>Πρώιμη πρόσβαση σε νέες λειτουργίες</li>
-          </ul>
-        </div>
-        <div class="card plan featured">
-          <span class="tag">Μόνο στη beta</span>
-          <h3>Founding Athletes</h3>
-          <div class="price">12 μήνες Pro δωρεάν</div>
-          <ul>
-            <li>Για όσους δοκιμάζουν τη beta, σε iPhone ή Android, και μένουν ενεργοί 4 εβδομάδες ή περισσότερο</li>
-            <li>Μόνιμος τίτλος «Ιδρυτικός Αθλητής» που δεν αγοράζεται ποτέ</li>
-          </ul>
-          <a class="btn" href="#beta" style="margin-top:16px">Μπες στη beta</a>
-        </div>
-      </div>
-      <p class="fine">Οι τιμές είναι σχεδιαζόμενες και μπορεί να αλλάξουν πριν την κυκλοφορία. Οι τοπικές τιμές διαφέρουν ανά χώρα. Τίποτα που κερδίζεται μέσα στην εφαρμογή (XP, θέσεις στα πρωταθλήματα, τίτλοι, ανταμοιβές σεζόν) δεν μπορεί ποτέ να αγοραστεί.</p>
     </div>
   </section>
 
   <section id="faq">
     <div class="wrap">
-      <div class="eyebrow">Ερωτήσεις</div>
-      <h2>Όσα ρωτάτε.</h2>
+      <h2 data-i18n="pr.h2">Ο προπονητής είναι δωρεάν. Πάντα.</h2>
+      <p class="lead" data-i18n="pr.p">Η καθοδήγηση στην προπόνηση δεν πρέπει να είναι ποτέ πίσω από συνδρομή. Ποτέ διαφημίσεις, και τα δεδομένα σου δεν πωλούνται ποτέ.</p>
+      <p class="found" data-i18n="pr.found"><strong>Founding Athletes.</strong> Όσοι δοκιμάζουν τη beta και μένουν ενεργοί 4 εβδομάδες ή περισσότερο παίρνουν 12 μήνες Pro δωρεάν όταν έρθει, και έναν τίτλο που δεν αγοράζεται ποτέ.</p>
       <div class="faq">
-        <details>
-          <summary>Είναι δωρεάν το Kompsatos;</summary>
-          <p>Ναι. Ο προπονητής είναι δωρεάν, πάντα: καταγραφή, προγράμματα, προτάσεις φορτίου, ρεκόρ, οδηγίες, εξαγωγή των δεδομένων σου και το χρονόμετρο διαλείμματος στην οθόνη κλειδώματος. Σχεδιάζεται μια πληρωμένη έκδοση Pro για επιπλέον λειτουργίες, όπως το πλήρες ιστορικό γραφημάτων και το Apple Watch.</p>
-        </details>
-        <details>
-          <summary>Πότε παίρνω πρόσβαση στη beta;</summary>
-          <p>Αμέσως. Σε iPhone, άνοιξε τον <a href="https://testflight.apple.com/join/EJnFbWZ6">σύνδεσμο της beta</a>, εγκατάστησε την εφαρμογή TestFlight της Apple αν σου τη ζητήσει και πάτα Install. Σε Android, ακολούθησε τα <a href="#android">δύο βήματα παρακάτω</a>. Οι θέσεις στο iPhone είναι περιορισμένες· αν η beta είναι γεμάτη, <a href="https://tally.so/r/2EMQMA">γράψου στη λίστα αναμονής</a> και θα σε ειδοποιήσουμε όταν ανοίξουν θέσεις.</p>
-        </details>
-        <details>
-          <summary>Υπάρχει έκδοση για Android;</summary>
-          <p>Ναι, σε beta. <a href="https://groups.google.com/g/kompsatos-testers">Γράψου στην ομάδα δοκιμαστών</a> με τον λογαριασμό Google του κινητού σου, μετά άνοιξε τον <a href="https://play.google.com/apps/testing/com.dimitrislazaridis.coachapp">σύνδεσμο δοκιμής</a> και πάτα «Γίνετε δοκιμαστής»· η εφαρμογή εγκαθίσταται από το Google Play όπως κάθε άλλη. Η Google ανοίγει μια εφαρμογή σε όλους αφού τη χρησιμοποιήσει μια ομάδα δοκιμαστών για 14 ημέρες, οπότε κάθε δοκιμαστής σε Android φέρνει πιο κοντά τη δημόσια κυκλοφορία.</p>
-        </details>
-        <details>
-          <summary>Χρειάζομαι λογαριασμό και πού πάνε τα δεδομένα μου;</summary>
-          <p>Δεν χρειάζεσαι λογαριασμό. Ως επισκέπτης όλα μένουν στο κινητό σου. Με λογαριασμό, και μόνο με τη ρητή συγκατάθεσή σου, οι προπονήσεις και οι ρυθμίσεις σου αποθηκεύονται σε βάση δεδομένων στη Φρανκφούρτη της Γερμανίας, για να τις επαναφέρεις σε άλλο κινητό. Χωρίς διαφημίσεις, χωρίς analytics, και τα δεδομένα σου δεν πωλούνται ποτέ. Λεπτομέρειες στην <a href="/el/privacy.html">πολιτική απορρήτου</a>.</p>
-        </details>
-        <details>
-          <summary>Είναι ιατρική συμβουλή;</summary>
-          <p>Όχι. Το Kompsatos δίνει πληροφορίες προπόνησης βασισμένες σε δημοσιευμένη έρευνα. Αν έχεις πόνο, τραυματισμό ή κάποια πάθηση, μίλα με έναν κατάλληλο επαγγελματία υγείας.</p>
-        </details>
+        <h2 style="margin-top:30px" data-i18n="faq.h2">Όσα ρωτάτε.</h2>
+        <details><summary data-i18n="faq.1.q">Είναι δωρεάν το Kompsatos;</summary><p data-i18n="faq.1.a">Ναι. Ο προπονητής είναι δωρεάν, πάντα: καταγραφή, προγράμματα, προτάσεις φορτίου, ρεκόρ, οδηγίες, εξαγωγή των δεδομένων σου και το χρονόμετρο διαλείμματος στην οθόνη κλειδώματος. Σχεδιάζεται μια πληρωμένη έκδοση Pro για επιπλέον λειτουργίες, όπως το πλήρες ιστορικό γραφημάτων (το δωρεάν δείχνει 3 μήνες), το Apple Watch, τα widgets και τα θέματα, με σχεδιαζόμενη τιμή 3,99 € τον μήνα ή 29,99 € τον χρόνο. Οι τιμές μπορεί να αλλάξουν πριν την κυκλοφορία.</p></details>
+        <details><summary data-i18n="faq.2.q">Πότε παίρνω πρόσβαση στη beta;</summary><p data-i18n="faq.2.a">Αμέσως. Σε iPhone, άνοιξε τον σύνδεσμο της beta, εγκατάστησε την εφαρμογή TestFlight της Apple αν σου τη ζητήσει και πάτα Install. Σε Android θέλει δύο βήματα, στη σελίδα για Android. Οι θέσεις στο iPhone είναι περιορισμένες· αν η beta είναι γεμάτη, <a href="https://tally.so/r/2EMQMA">γράψου στη λίστα αναμονής</a> και θα σε ειδοποιήσουμε όταν ανοίξουν θέσεις.</p></details>
+        <details><summary data-i18n="faq.3.q">Χρειάζομαι λογαριασμό και πού πάνε τα δεδομένα μου;</summary><p data-i18n="faq.3.a">Δεν χρειάζεσαι λογαριασμό. Ως επισκέπτης όλα μένουν στο κινητό σου. Με λογαριασμό, και μόνο με τη ρητή συγκατάθεσή σου, οι προπονήσεις και οι ρυθμίσεις σου αποθηκεύονται σε βάση δεδομένων στη Φρανκφούρτη της Γερμανίας, για να τις επαναφέρεις σε άλλο κινητό. Χωρίς διαφημίσεις, χωρίς analytics, και τα δεδομένα σου δεν πωλούνται ποτέ. Λεπτομέρειες στην <a href="privacy.html">πολιτική απορρήτου</a>.</p></details>
+        <details><summary data-i18n="faq.4.q">Δουλεύει χωρίς Apple Watch;</summary><p data-i18n="faq.4.a">Ναι. Όλα δουλεύουν μόνο με το κινητό, σε iPhone και σε Android. Το ρολόι είναι επιπλέον, για καταγραφή από τον καρπό.</p></details>
+        <details><summary data-i18n="faq.5.q">Είναι ιατρική συμβουλή;</summary><p data-i18n="faq.5.a">Όχι. Το Kompsatos δίνει πληροφορίες προπόνησης βασισμένες σε δημοσιευμένη έρευνα. Αν έχεις πόνο, τραυματισμό ή κάποια πάθηση, μίλα με έναν κατάλληλο επαγγελματία υγείας.</p></details>
       </div>
     </div>
   </section>
 
-  <section id="beta" class="signup">
-    <div class="wrap">
-      <div class="eyebrow">Beta</div>
-      <h2>Θέλεις να μπεις;</h2>
-      <p class="lead">Δωρεάν, σε iPhone και Android.</p>
-      <div class="steps">
-        <div class="card">
-          <span class="tag">iPhone</span>
-          <h3>Μέσω TestFlight</h3>
-          <p>Άνοιξε τον σύνδεσμο της beta στο iPhone σου. Αν σου ζητήσει, εγκατάστησε την εφαρμογή TestFlight της Apple και πάτα Install.</p>
-          <a class="btn" href="https://testflight.apple.com/join/EJnFbWZ6">Beta για iPhone</a>
-        </div>
-        <div class="card" id="android">
-          <span class="tag">Android</span>
-          <h3>Μέσω Google Play</h3>
-          <ol>
-            <li><a href="https://groups.google.com/g/kompsatos-testers">Γράψου στην ομάδα δοκιμαστών</a> με τον λογαριασμό Google που έχεις στο κινητό σου.</li>
-            <li>Άνοιξε τον <a href="https://play.google.com/apps/testing/com.dimitrislazaridis.coachapp">σύνδεσμο δοκιμής</a>, πάτα «Γίνετε δοκιμαστής» και εγκατάστησε το Kompsatos από το Google Play.</li>
-          </ol>
-          <a class="btn" href="https://groups.google.com/g/kompsatos-testers">Ομάδα δοκιμαστών</a>
-        </div>
+  <section id="get" class="get">
+    <div class="wrap"><span id="beta"></span>
+      <h2 data-i18n="get.h2">Ξεκίνα από τη σημερινή προπόνηση.</h2>
+      <p class="lead" data-i18n="get.p">Δωρεάν, σε iPhone και Android.</p>
+      <div class="cta-row">
+        <a class="btn ios" href="https://testflight.apple.com/join/EJnFbWZ6" data-i18n="cta.ios">Beta για iPhone</a>
+        <a class="btn ghost android" href="/android/" data-i18n="cta.android">Beta για Android</a>
       </div>
-      <p class="fine">Γεμάτη η beta στο iPhone; <a href="https://tally.so/r/2EMQMA">Γράψου στη λίστα αναμονής</a>· χρησιμοποιείται μόνο για να σε ενημερώσουμε για τη beta. Δες την <a href="/el/privacy.html">πολιτική απορρήτου</a>.</p>
+      <div class="qr"><span role="img" data-i18n-attr="aria-label:get.qr.alt" aria-label="QR code που ανοίγει το kompsatos.com στο κινητό σου"><svg xmlns="http://www.w3.org/2000/svg" width="132" height="132" class="segno"><g transform="scale(4)"><path fill="#f4f2ed" d="M0 0h33v33h-33z"/><path class="qrline" stroke="#101214" d="M2 2.5h7m1 0h2m1 0h3m3 0h2m3 0h7m-29 1h1m5 0h1m1 0h1m2 0h1m2 0h4m2 0h1m1 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m5 0h3m4 0h1m2 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m2 0h1m2 0h2m1 0h1m1 0h2m3 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m3 0h3m1 0h2m2 0h3m1 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m3 0h2m5 0h1m2 0h1m1 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-19 1h1m1 0h1m2 0h2m2 0h2m-20 1h1m4 0h3m1 0h2m1 0h1m3 0h1m3 0h1m5 0h2m-29 1h5m2 0h1m4 0h3m1 0h5m2 0h2m1 0h2m-28 1h2m1 0h2m1 0h2m1 0h1m1 0h2m1 0h1m2 0h1m2 0h3m2 0h1m-26 1h1m3 0h2m3 0h2m1 0h1m2 0h1m2 0h3m1 0h2m1 0h1m-26 1h4m1 0h2m1 0h1m1 0h2m1 0h2m1 0h1m4 0h2m4 0h1m-28 1h1m1 0h1m1 0h1m2 0h1m1 0h1m1 0h2m2 0h1m2 0h3m1 0h1m1 0h2m2 0h1m-29 1h11m1 0h1m1 0h2m4 0h2m1 0h1m-23 1h1m1 0h1m1 0h1m2 0h1m1 0h5m4 0h1m1 0h1m2 0h4m-24 1h1m1 0h4m3 0h1m1 0h1m1 0h1m7 0h3m-28 1h3m2 0h1m1 0h4m2 0h2m1 0h2m1 0h1m2 0h1m1 0h2m2 0h1m-29 1h2m1 0h1m1 0h2m5 0h2m2 0h1m1 0h2m5 0h2m1 0h1m-29 1h1m1 0h4m1 0h1m1 0h1m1 0h6m3 0h3m1 0h2m2 0h1m-29 1h1m2 0h2m1 0h1m1 0h2m3 0h2m1 0h2m1 0h6m1 0h1m1 0h1m-21 1h2m4 0h2m2 0h3m3 0h4m-28 1h7m1 0h1m1 0h1m1 0h1m1 0h3m2 0h2m1 0h1m1 0h1m-25 1h1m5 0h1m2 0h2m2 0h2m1 0h1m1 0h3m3 0h2m-26 1h1m1 0h3m1 0h1m4 0h1m4 0h9m2 0h2m-29 1h1m1 0h3m1 0h1m4 0h4m2 0h4m2 0h1m1 0h3m-28 1h1m1 0h3m1 0h1m2 0h2m2 0h1m1 0h1m1 0h1m1 0h9m-28 1h1m5 0h1m1 0h1m1 0h3m1 0h1m1 0h1m4 0h1m2 0h3m1 0h1m-29 1h7m4 0h1m3 0h1m1 0h1m1 0h1m2 0h1m1 0h3"/></g></svg></span><span data-i18n="get.qr">Σε υπολογιστή; Σκάναρε με το κινητό σου.</span></div>
     </div>
   </section>
+  </div>
 </main>
 
 <footer class="site">
   <div class="wrap">
-    <div><a href="/el/privacy.html">Απόρρητο</a><a href="/el/terms.html">Όροι beta</a><a href="/el/support.html">Υποστήριξη</a><a href="mailto:hello@kompsatos.com">hello@kompsatos.com</a></div>
-    <div><a href="https://www.instagram.com/kompsatosapp" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@kompsatos" target="_blank" rel="noopener">TikTok</a><a href="https://www.youtube.com/@kompsatosapp" target="_blank" rel="noopener">YouTube</a></div>
-    <div>© 2026 Kompsatos · Πληροφορίες προπόνησης, όχι ιατρική συμβουλή.</div>
+    <div><a href="privacy.html" data-i18n="ft.privacy">Απόρρητο</a><a href="terms.html" data-i18n="ft.terms">Όροι beta</a><a href="support.html" data-i18n="ft.support">Υποστήριξη</a><a href="mailto:hello@kompsatos.com">hello@kompsatos.com</a></div>
+    <div><a href="https://www.instagram.com/kompsatosapp" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@kompsatos" rel="noopener">TikTok</a><a href="https://www.youtube.com/@kompsatosapp" rel="noopener">YouTube</a></div>
+    <div data-i18n="ft.legal">© 2026 Kompsatos · Πληροφορίες προπόνησης, όχι ιατρική συμβουλή.</div>
   </div>
 </footer>
 
+<div class="dock" id="dock">
+  <b data-i18n="bar.text">Kompsatos · δωρεάν</b>
+  <a class="btn" id="dockBtn" href="#get" data-i18n="bar.cta">Κατέβασέ το</a>
+</div>
+
+<script>window.K={"fixed":true,"lang":"el","str":{"cta.ios.short":{"el":"Beta για iPhone"},"cta.android.short":{"el":"Beta για Android"},"demo.last":{"el":"Την προηγούμενη φορά, σετ {n}: 80 kg × 8 · RIR 2"},"demo.save":{"el":"Αποθήκευση σετ {n} / 3"},"demo.wSet":{"el":"Σετ {n} από 3"},"feat.eyebrow":{"el":"Τι κάνει"},"feat.h2":{"el":"Ένας προπονητής που διαβάζει την προπόνησή σου, όχι τη διάθεσή σου."},"feat.tab1":{"el":"Το πλάνο σου"},"feat.tab2":{"el":"Στο γυμναστήριο"},"feat.tab3":{"el":"Η πρόοδός σου"},"feat.1.h":{"el":"Πρόγραμμα φτιαγμένο από την έρευνα"},"feat.1.a":{"el":"Εβδομαδιαία σετ ανά μυ μέσα στα δημοσιευμένα εύρη, και λιγότερα όταν ξεκινάς."},"feat.1.b":{"el":"Οι βαριές ασκήσεις ανοίγουν τη μέρα. Μια προπόνηση μένει έως 24 σετ εργασίας όταν προπονείσαι τέσσερις ή περισσότερες μέρες την εβδομάδα."},"feat.1.c":{"el":"Κάθε μέρα δείχνει πόσο πραγματικά διαρκεί, μαζί με τα σετ ζεστάματος."},"feat.2.h":{"el":"Φτιαγμένο για την ώρα της προπόνησης"},"feat.2.a":{"el":"Το επόμενο φορτίο βγαίνει από τις δικές σου πρόσφατες προπονήσεις. Στα μηχανήματα και στις τροχαλίες, από το ίδιο μηχάνημα."},"feat.2.b":{"el":"Το χρονόμετρο διαλείμματος τρέχει στην οθόνη κλειδώματος και στο Dynamic Island στο iPhone, και σε ειδοποίηση στο Android."},"feat.2.c":{"el":"Υπολογιστής δίσκων, σετ ζεστάματος, σημειώσεις σε κάθε σετ, και αναίρεση όταν πατήσεις λάθος."},"feat.3.h":{"el":"Ρεκόρ που είναι αληθινά"},"feat.3.a":{"el":"Η πρώτη καταγραφή μιας άσκησης είναι το σημείο εκκίνησής σου, όχι ρεκόρ. Τα ρεκόρ μετράνε ανά άσκηση και ανά μηχάνημα."},"feat.3.b":{"el":"172 επιτεύγματα και 100 επίπεδα. Οι πόντοι έρχονται από το να τηρείς το πρόγραμμά σου, ποτέ από επιπλέον όγκο."},"feat.3.c":{"el":"Ύπνος, σωματικό βάρος και περίμετρος μέσης δίπλα στην προπόνησή σου. Εξαγωγή όλων σε CSV, JSON ή PDF, δωρεάν."},"feat.1.alt":{"el":"Οθόνη προγράμματος: το ενεργό πρόγραμμα με τις μέρες προπόνησης, τους μύες κάθε μέρας και τη διάρκειά της"},"feat.2.alt":{"el":"Οθόνη καταγραφής σετ για τις πιέσεις πάγκου: η προηγούμενη προπόνηση, το προτεινόμενο φορτίο και οι επαναλήψεις για σήμερα, και το κουμπί αποθήκευσης"},"feat.3.alt":{"el":"Οθόνη ρεκόρ: τα τελευταία ρεκόρ ανά άσκηση"},"watch.dot":{"el":"Δείξε την οθόνη ρολογιού {n}"},"dose.unit":{"el":"σετ / εβδομάδα"},"dose.y":{"el":"Ανιχνεύσιμα βήματα ανάπτυξης"},"dose.few":{"el":"λίγες μελέτες"},"dose.t0.name":{"el":"Κάτω από το ελάχιστο"},"dose.t0.text":{"el":"Η ανιχνεύσιμη ανάπτυξη ξεκίνησε γύρω στα 4 εβδομαδιαία σετ."},"dose.t1.name":{"el":"Ελάχιστη αποτελεσματική δόση"},"dose.t1.text":{"el":"Αρκετά για ανιχνεύσιμη ανάπτυξη."},"dose.t2.name":{"el":"Υψηλή αποδοτικότητα"},"dose.t3.name":{"el":"Μέτρια αποδοτικότητα"},"dose.t4.name":{"el":"Χαμηλή αποδοτικότητα"},"dose.t5.name":{"el":"Η χαμηλότερη αποδοτικότητα"},"dose.cost":{"el":"Σε αυτό το εύρος, ένα ακόμη ανιχνεύσιμο βήμα ανάπτυξης χρειάστηκε περίπου <b>{n}</b> επιπλέον εβδομαδιαία σετ."},"dose.t6.name":{"el":"Ασαφές"},"dose.t6.text":{"el":"Πολύ λίγες μελέτες για συμπέρασμα. Η ανάπτυξη μπορεί να είναι και μικρότερη."},"st.p10":{"el":"Επίπεδο αγωνιστικού powerlifting"},"st.p50":{"el":"Διάμεσος αγωνιστικού powerlifting"},"st.p90":{"el":"Κορυφαίο 10% του powerlifting"},"st.p10s":{"el":"10ο"},"st.p50s":{"el":"διάμεσος"},"st.p90s":{"el":"90ό"},"st.below":{"el":"Κάτω από το πρώτο σημάδι. Τα σημάδια προέρχονται από αγωνιζόμενους, μια μικρή και πολύ δυνατή ομάδα. Επόμενο σημάδι: <b>{next}</b>, σε <b>{kg} kg</b> ακόμη στο εκτιμώμενο μέγιστό σου."},"st.at":{"el":"Έφτασες: <b>{level}</b>. Επόμενο σημάδι: <b>{next}</b>, σε <b>{kg} kg</b> ακόμη στο εκτιμώμενο μέγιστό σου."},"st.top":{"el":"Έφτασες: <b>{level}</b>, το ψηλότερο σημάδι εδώ."},"st.invalid":{"el":"Γράψε σωματικό βάρος, κιλά στην μπάρα και 1 έως 10 επαναλήψεις."},"img.program":{"el":"../shots/el/program.webp"},"img.logging":{"el":"../shots/el/logging.webp"},"img.records":{"el":"../shots/el/records.webp"},"img.watch1":{"el":"../shots/el/watch1.webp"},"img.watch2":{"el":"../shots/el/watch2.webp"},"img.watch3":{"el":"../shots/el/watch3.webp"},"img.watch4":{"el":"../shots/el/watch4.webp"}}};</script>
+<script src="../v2.js" defer></script>
 </body>
 </html>
