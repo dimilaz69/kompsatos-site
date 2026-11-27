@@ -43,6 +43,10 @@
     .btn{display:block;text-align:center;background:#32DBB8;color:#121417;font-weight:800;text-decoration:none;border-radius:999px;padding:15px 18px;margin-top:12px;font-size:16px}
     .btn.alt{background:transparent;color:#32DBB8;border:2px solid #32DBB8}
     .note{color:#8C8882;font-size:13px;margin-top:10px}
+    .warn{border-color:rgba(255,196,87,.6)}
+    .warn h2{color:#FFC457}
+    .checks{margin:10px 0 0 20px}
+    .checks li{margin-top:8px}
     .foot{color:#8C8882;font-size:13px;margin-top:32px}
     [data-l]{display:none}
     html[lang="en"] [data-l="en"],html[lang="el"] [data-l="el"]{display:revert}
@@ -85,13 +89,24 @@
     <p data-l="el">Προπονήσου με την εφαρμογή 4 εβδομάδες. Όταν κάτι δεν δουλεύει ή σε μπερδεύει, πες μας: <a href="mailto:hello@kompsatos.com">hello@kompsatos.com</a></p>
   </div>
 
+  <div class="card warn">
+    <h2 data-l="en">Before you start: one Google account</h2>
+    <h2 data-l="el">Πριν ξεκινήσεις: ένας λογαριασμός Google</h2>
+    <p data-l="en">Most failed installs come from this. Chrome and the Google Play app must use <b>the same</b> Google account.</p>
+    <p data-l="el">Από εδώ ξεκινούν σχεδόν όλες οι αποτυχημένες εγκαταστάσεις. Το Chrome και η εφαρμογή Google Play πρέπει να έχουν <b>τον ίδιο</b> λογαριασμό Google.</p>
+    <ul class="checks">
+      <li data-l="en">Open the <b>Google Play</b> app and tap your picture at the top right. Note the email.</li>
+      <li data-l="en">In <b>Chrome</b>, tap your picture at the top right. It must show the same email. If not, switch one of them.</li>
+      <li data-l="el">Άνοιξε την εφαρμογή <b>Google Play</b> και πάτα την εικόνα σου πάνω δεξιά. Δες ποιο email γράφει.</li>
+      <li data-l="el">Στο <b>Chrome</b> πάτα την εικόνα σου πάνω δεξιά. Πρέπει να γράφει το ίδιο email. Αν όχι, άλλαξε το ένα από τα δύο.</li>
+    </ul>
+  </div>
+
   <div class="card">
     <h2 data-l="en">Get in, 3 taps</h2>
     <h2 data-l="el">Μπες με 3 πατήματα</h2>
     <p class="note" data-l="en">Open this page in Chrome (not inside Instagram, Messenger or Viber). Each button opens a new tab; come back here for the next one.</p>
-    <p class="note" data-l="en"><b>Use the same Google account in Chrome and in Google Play</b> (tap your picture at the top right of Google Play to check).</p>
     <p class="note" data-l="el">Άνοιξε αυτή τη σελίδα στο Chrome (όχι μέσα από Instagram, Messenger ή Viber). Κάθε κουμπί ανοίγει νέα καρτέλα· γύρνα εδώ για το επόμενο.</p>
-    <p class="note" data-l="el"><b>Ο λογαριασμός Google στο Chrome πρέπει να είναι ο ίδιος με του Google Play</b> (πάτα την εικόνα σου πάνω δεξιά στο Google Play για να το δεις).</p>
     <ol>
       <li>
         <span data-l="en">Join the testers group with the Google account on your phone.</span>
@@ -110,11 +125,28 @@
         <span data-l="el">Εγκατάστησε το Kompsatos από το Google Play.</span>
         <a class="btn" href="intent://details?id=com.dimitrislazaridis.coachapp#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.dimitrislazaridis.coachapp;end"><span data-l="en">3 · Install</span><span data-l="el">3 · Εγκατάσταση</span></a>
         <p class="note" data-l="en">Button 3 opens the Google Play app itself. If a small Google Play window says “Something went wrong”, close it and tap button 3 again.</p>
-        <p class="note" data-l="en">Steps 2 and 3 work only after step 1, with the same Google account. If Google Play says the app isn’t available, wait 5 minutes and try again.</p>
         <p class="note" data-l="el">Το κουμπί 3 ανοίγει την ίδια την εφαρμογή Google Play. Αν ένα μικρό παράθυρο του Google Play γράψει «Σφάλμα», κλείσ' το και πάτα ξανά το κουμπί 3.</p>
-        <p class="note" data-l="el">Τα βήματα 2 και 3 δουλεύουν μόνο μετά το βήμα 1, με τον ίδιο λογαριασμό Google. Αν το Google Play γράψει ότι η εφαρμογή δεν είναι διαθέσιμη, περίμενε 5 λεπτά και ξαναδοκίμασε.</p>
       </li>
     </ol>
+  </div>
+
+  <div class="card" id="help">
+    <h2 data-l="en">It won’t install?</h2>
+    <h2 data-l="el">Δεν εγκαθίσταται;</h2>
+    <p data-l="en">You see “This app isn’t available for any of your devices”, or the Install button keeps loading. Do this once:</p>
+    <p data-l="el">Βλέπεις «Αυτή η εφαρμογή δεν είναι διαθέσιμη για καμία από τις συσκευές σας», ή το «Εγκατάσταση» φορτώνει συνέχεια. Κάνε μία φορά τα εξής:</p>
+    <ol>
+      <li data-l="en">Phone <b>Settings</b> → <b>Apps</b> → <b>Google Play Store</b> → <b>Storage &amp; cache</b> → <b>Clear cache</b>. (Not “Clear storage”.)</li>
+      <li data-l="en">Go back and tap <b>Force stop</b> → OK.</li>
+      <li data-l="en">Open the <b>Google Play</b> app, tap your picture at the top right and pick the same account as in Chrome. If it isn’t listed, tap “Add another account”.</li>
+      <li data-l="en">Come back to this page in Chrome and tap button <b>3 · Install</b> again.</li>
+      <li data-l="el"><b>Ρυθμίσεις</b> κινητού → <b>Εφαρμογές</b> → <b>Google Play Store</b> → <b>Αποθηκευτικός χώρος και κρυφή μνήμη</b> → <b>Διαγραφή κρυφής μνήμης</b>. (Όχι «Διαγραφή αποθηκευτικού χώρου».)</li>
+      <li data-l="el">Γύρνα πίσω και πάτα <b>Αναγκαστική διακοπή</b> → ΟΚ.</li>
+      <li data-l="el">Άνοιξε την εφαρμογή <b>Google Play</b>, πάτα την εικόνα σου πάνω δεξιά και διάλεξε τον ίδιο λογαριασμό με το Chrome. Αν δεν υπάρχει, πάτα «Προσθήκη άλλου λογαριασμού».</li>
+      <li data-l="el">Γύρνα σε αυτή τη σελίδα στο Chrome και πάτα ξανά το κουμπί <b>3 · Εγκατάσταση</b>.</li>
+    </ol>
+    <p class="note" data-l="en">Just joined? Google Play can take up to a few minutes to see you as a tester. Still stuck? Email <a href="mailto:hello@kompsatos.com">hello@kompsatos.com</a> with a screenshot.</p>
+    <p class="note" data-l="el">Μόλις γράφτηκες; Το Google Play μπορεί να θέλει λίγα λεπτά για να σε δει ως δοκιμαστή. Ακόμα τίποτα; Στείλε screenshot στο <a href="mailto:hello@kompsatos.com">hello@kompsatos.com</a>.</p>
   </div>
 
   <p class="foot" data-l="en">On iPhone? <a href="/#beta">Join the iPhone beta</a>. · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Beta terms</a></p>
